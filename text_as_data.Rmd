@@ -6,56 +6,229 @@ output: html_document
 ![](Text_As_Data_Cover.png)
 <br>
 <br>
-
-## Welcome to Text as Data
-
-Welcome to "Data Scraping and Text Analysis" (IDS 703) On this page, you will find an overview of the course, a description of each topic covered in the course, and a series of instructions about how to access all of the software and materials necessary for the course.
-
-## What is Text as Data?
-
-The past decade has witnessed an explosion of data produced by websites such as Twitter, Facebook, Google, and Wikipedia, but also the mass digitization of historical archives and administrative records. Though these new data sources hold enormous potential to address a range of pressing problems within industry and academia, collecting and analyzing text-based data presents unique challenges. Fortunately, the widespread availability of text-based data coincides with major advances in the fields of computer science and natural language processing. This course will provide students with an overview of popular techniques for collecting, processing, and analyzing text-based data—including screen-scraping, mining data from application programming interfaces or APIs, topic modeling, text networks, and advanced text classifiers. 
-
-## What Subjects are Covered in this Class?
-
-This class covers a range of different topics that build on top of each other. For example, in the first tutorial, you will learn how to collect data from Twitter, and in subsequent tutorials you will learn how to analyze those data using automated text analysis techniques. For this reason, you may find it difficult to jump towards one of the most advanced issues before covering the basics.
-
 <br>
 
-**[Introduction: Strengths and Weaknesses of Text as Data](https://cbail.github.io/textasdata/strengths-weaknesses/rmarkdown/Strengths_and_Weaknesses.html)**  
+## Course Description
 
-**[Application Programming Interfaces](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)**  
+Welcome to "Data Scraping and Text Analysis" (IDS 703), one of the core courses in Duke University's Masters Program in Interdisciplinary Data Science (MIDS). The past decade has witnessed an explosion of data produced by websites such as Twitter, Facebook, Google, and Wikipedia, but also the mass digitization of historical archives and administrative records. Though these new data sources hold enormous potential to address a range of pressing problems within industry and academia, collecting and analyzing text-based data presents unique challenges. Fortunately, the widespread availability of text-based data coincides with major advances in the fields of computer science and natural language processing. This course will provide students with an overview of popular techniques for collecting, processing, and analyzing text-based data—including screen-scraping, mining data from application programming interfaces or APIs, topic modeling, text networks, and advanced text classifiers. We will also discuss the challenge of conducting empirical research with these data, including ethics, causal inference, and the external validity of digital sources.
 
-**[Screen-Scraping](https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html)**  
 
-**[Basic Text Analysis](https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)**  
+## Prerequisites
 
-**[Dictionary-Based Text Analysis](https://cbail.github.io/textasdata/dictionary-methods/rmarkdown/Dictionary-Based_Text_Analysis.html)**  
+R will be the main programming language for this course. Though the class will review basic programming techniques such as loops and functions, practical experiences with R is highly recommended. The majority of our time will be spent mastering the following R packages: rvest, RTweet, RFacebook, lda, stm, ldaviz, textnets, and wordVectors as well as a variety of functions in base R. General knowledge of data structures, basic programming, and rudimentary statistics is also required.
 
-**[Topic Modeling](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)**  
 
-**[Text Networks](https://cbail.github.io/textasdata/text-networks/rmarkdown/Text_Networks.html)** 
+## Required Readings
 
-**[Word Embeddings](https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html)**  
+You must purchase one book for this class:
 
+[Salganik, Matthew. 2017. Bit by Bit: Social Research in the Digital Age. Princeton: Princeton University Press](https://press.princeton.edu/books/ebook/9781400888184/bit-by-bit)
+
+All other readings are linked on the syllabus or other course materials below.
+
+## Requirements
+
+Success in this course requires that you attend class, complete weekly homework assignments, complete a mid-term exam, and a final group-based project. I describe each of these requirements in the following sections.
+
+#### Mid-Term Exam
+
+The mid-term exam will include approximately 20 multiple choice and short answer questions that cover content from the first half of the class.
+
+#### Final Project
+
+The final project will be a team-based research project that fuses all of the skills we learn during the course of the semester in order to answer a question that can be solved with text-based data. All projects must analyze at least 1,000 documents and apply some type of automated text analysis to identify meaningful patterns within them and address an empirical question of interest to data scientists, broadly defined. Examples might include a sentiment analysis of a company’s tweets and responses to those tweets in order to measure customer satisfaction, or an analysis that seeks to determine why posts on Facebook fan pages go viral. 
+
+Each team must produce a 20-minute presentation that describes their research project, delivered in powerpoint or another medium during a final class period and delivered to the instructor before this time. Each team must also submit a report that details their work and what type of work each student contributed to the project (i.e which team members contributed to which part of the project and precisely what work each team member did)-- your goal should be for all members of the team to contribute to each stage of the project. As an additional accountability mechanism, ⅓ of your grade for the final project will be determined by your fellow group members, with the remaining ⅔ of your grade for the project determined by Professor Bail (and this part of the grade will be assigned to the entire team, instead of by individual members). 
+
+#### Participation
+
+Attendance in this course is mandatory and you are expected to be an active participant in all classroom discussions and exercises. If you suffer from social anxiety or if English is not your first language, I encourage to participate in discussions outside of class on our Slack Channel. Uncivil behavior such as engaging in personal conversations during lectures or discussion sections, browsing internet sites not relevant to classroom discussions, and cell phone usage will negatively affect your grade. Your participation grade will be calculated at the end of the semester, but if you would like to receive input on your participation grade at any point during the semester please contact me.
+
+
+#### Grading Scheme
+
+Mid-Term Exam: 30%
+
+Final Project: 60% (⅓ of this grade is determined by your fellow group members and ⅔ is determined by Professor Bail)
+
+Participation: 10%
+
+
+
+## General Course Policies
+
+I am a very reasonable person and understand that sometimes "life happens" and you may not be able to complete your work in a timely manner. I will therefore carefully consider all explanations for deviance from the general course policies outlined below.
+
+#### Attendance
+
+Attendance for all lectures is mandatory. If you have a University-excused reason to miss please follow the proper procedure for letting your TA know about it. You are responsible for knowing and acting in accordance with University policy. 
+
+#### Academic Integrity
+
+Understand and follow the Duke Community Standard. Plagiarism, cheating or other violations will be dealt with according to University policy. All student assignments will be processed by plagiarism detection software.
+
+#### Mental Health and Stress
+
+If you are suffering from stress, depression, anxiety, or any other mental health issues that are common among Duke students, please consider visiting Counseling and Psychological Services (CAPS) on campus, who provide support on everything from minor to major mental health issues.
+
+#### Extra-Credit Policy
+
+There will be no extra credit or make-up assignments. 
+
+#### Syllabus
+  
+I reserve the right to make changes to the syllabus, including project due dates and test dates. These changes will be announced as early as possible and no later than one week before materials are due.
+
+## Course Schedule (Spring 2020)
+
+
+#### January 9: Preliminaries
+
+Introductions and Housekeeping
 <br>
 
-## Who am I?
+#### January 14: Introduction to Text as Data
 
-I am a Professor of Sociology, Public Policy, and Data Science at Duke University who studies political polarization on social media. You can learn more about my research [here](http://www.chrisbail.net) or follow me on twitter [here](http://www.twitter.com/chris_bail). Much of the material in the tutorials above draws upon my own research and text analysis techniques I've developed. Yet I also draw heavily on a number of other excellent tutorials by a range of different people who I tried to remember to thank in each tutorial above---if I forgot to recognize your work, please email me! 
+Strengths and Weaknesses of Text as Data
+
+[Slides](https://cbail.github.io/textasdata/strengths-weaknesses/rmarkdown/Strengths_and_Weaknesses.html)
+
+#### January 16: Ethics in Text as Data
+<br>
+
+#### January 21: Application Programming Interfaces Part 1
+
+What is an API? Credentials, and Rate Limiting
+
+[Slides](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)
+
+[Annotated Code](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)
 
 
-## How can I Access the Course Materials?
+#### January 23: Application Programming Interfaces
 
-All of the materials for this course are available on my [Github page](http://www.github.com/cbail). There you will find datasets used in the tutorials above as well as all of the source files necessary to produce the tutorials above. If you notice problems, or other limitations of the tutorials above, kindly submit a "pull" request (if you know how to use Github).
+Working with the Twitter API
 
-## How can I get started?
+[Slides](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)
 
-This course assumes basic familiarity with the R software. If you are new to R, I recommend the sequence of online courses described on [this website](https://compsocialscience.github.io/summer-institute/2018/#pre-arrival) to get you started.
+[Annotated Code](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)
+
+#### January 28: Screen-Scraping Part 1 
+
+(What is screen-scraping, character encoding)
+
+[Slides](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html)
+
+#### January 30: Screen-Scraping Part 2 
+
+(Reading and parsing HTML)
+
+[Slides](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html)
+
+#### February 4: Basic Text Analysis Part 1 
+
+(GREP, Tokenization, stemming)
+
+[Slides](https://cbail.github.io/textasdata/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 
-## What if the Code in the Tutorials does not work?
+#### February 6: No Class
+<br>
 
-I will do my best to update the tutorials above as often as possible-- but in the world of open source software it is inevitable that problems will arise that I may not be able to address quickly.
+#### February 11: Basic Text Analysis Part 2 (Text pre-processing, ngrams)
+
+[Slides](https://cbail.github.io/textasdata/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+
+
+#### February 13: Mid-Term Review
+<br>
+
+#### February 18 Mid-Term Exam
+<br>
+
+#### February 20: Dictionary-Based Analysis
+
+[Slides](https://cbail.github.io/textasdata/dictionary-methods/Rpres/Dictionary%20Based%20Analysis.html)
+
+[Annotated Code](https://cbail.github.io/textasdata/dictionary-methods/rmarkdown/Dictionary-Based_Text_Analysis.html)
+
+#### February 25: Topic Modeling
+
+[Slides](https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)
+
+#### February 27: Topic Modeling Part 2
+
+[Slides](https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)
+
+#### March 3: Structural Topic Models
+
+[Slides](https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/)
+
+[Annotated Code](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)
+
+
+#### March 5: Social Network Analysis
+
+[Slides](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit)
+
+#### March 17: Text as Networks
+
+[Slides](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html)
+
+[Annotated Code](https://cbail.github.io/textasdata/text-networks/rmarkdown/Text_Networks.html)
+
+#### March 19: Textnets
+
+[Slides](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html)
+
+[Annotated Code](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/rmarkdown/SICSS_Text_Networks.html)
+
+#### March 24: Word Embeddings Part 1
+
+[Slides](https://cbail.github.io/textasdata/word2vec/rpres/word2vec.html)
+
+[Annotated Code](https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html)
+
+#### March 26: Word Embeddings Part 2
+
+[Slides](https://cbail.github.io/textasdata/word2vec/rpres/word2vec.html)
+
+[Annotated Code](https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html)
+
+#### March 31: Sentence Parsers
+
+Part-of-Speech Tagging, Sentence Parsing, and Named Entity Recognition
+
+[Slides](https://cbail.github.io/textasdata/tagging-parsing-ner/Taggingparsing.html)
+
+#### April 2: No Class
+
+#### April 7: Chat Bots
+
+[Slides](https://cbail.github.io/textasdata/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
+
+#### April 9: Final Project Presentations
+Groups 1-3
+<br>
+
+
+
+#### April 14: Final Project Presentations
+Groups 3-6
+
+<br>
 
 
 
