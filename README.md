@@ -27,7 +27,7 @@ This class covers a range of different topics that build on top of each other. F
 
 ## Who are You?
 
-I am a Professor of Sociology, Public Policy, and Data Science at Duke University who studies political polarization on social media. You can learn more about my research [here](www.chrisbail.net). Much of the material in the tutorials above draws upon my own research and text analysis techniques I've developed. Yet I also draw heavily on a number of other excellent tutorials by a range of different people who I tried to remember to thank in each tutorial above---if I forgot to recognize your work, please email me!
+I am a Professor of Sociology, Public Policy, and Data Science at Duke University who studies political polarization on social media. You can learn more about my research [here] (www.chrisbail.net). Much of the material in the tutorials above draws upon my own research and text analysis techniques I've developed. Yet I also draw heavily on a number of other excellent tutorials by a range of different people who I tried to remember to thank in each tutorial above---if I forgot to recognize your work, please email me!
 
 ## How can I Access the Course Materials?
 
@@ -35,6 +35,6 @@ All of the materials for this course are available online via the links above. M
 
 ## How can I get started?
 
-This course assumes basic familiarity with the R software. If you are new to R, I recommend the sequence of online courses described on [this website](https://compsocialscience.github.io/summer-institute/2018/#pre-arrival) to get you started.
+This course assumes basic familiarity with the R software. If you are new to R, I recommend the sequence of online courses described on [this website] (https://compsocialscience.github.io/summer-institute/2018/#pre-arrival) to get you started.
 
 
