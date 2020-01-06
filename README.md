@@ -1,6 +1,6 @@
 # Text as Data
 
-Welcome to my course entitled "Text as Data." On this page, you will find an overview of the course, a description of each topic covered in the course, and a series of instructions about how to access all of the software and materials necessary for the course. (To view the course website, click [here](https://cbail.github.io/ids704/text_as_data.html).
+Welcome to my course entitled "Text as Data." On this page, you will find an overview of the course, a description of each topic covered in the course, and a series of instructions about how to access all of the software and materials necessary for the course. To view the information contained in this repository via the course website, click [here](https://cbail.github.io/ids704/text_as_data.html).
 
 ## What is Text as Data?
 
