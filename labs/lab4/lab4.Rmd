@@ -1,0 +1,15 @@
+---
+title: "Lab 4: Dictionary-Based Analysis"
+output: 
+  html_document:
+    toc_float: true
+  
+---
+
+### Due: February 27
+
+This lab corresponds with the course material covering dictionary-based analysis Submit your completed assignment as an R Markdown file to Dropbox by the start of class on February 27.
+
+1.
+
+2. 

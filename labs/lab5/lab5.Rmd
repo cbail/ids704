@@ -1,0 +1,15 @@
+---
+title: "Lab 5: Topic Modeling"
+output: 
+  html_document:
+    toc_float: true
+  
+---
+
+### Due: March 3
+
+This lab corresponds with the course material covering topic modeling Submit your completed assignment as an R Markdown file to Dropbox by the start of class on March 3.
+
+1.
+
+2. 

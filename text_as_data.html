@@ -67,8 +67,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -96,9 +94,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -502,13 +505,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1325,9 +1328,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1352,21 +1353,82 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -1444,8 +1506,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1454,6 +1514,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1480,11 +1550,12 @@ div.tocify {
 <h2>Contact Information</h2>
 <p><strong>Email:</strong> <a href="mailto:christopher.bail@duke.edu" class="email">christopher.bail@duke.edu</a><br />
 <strong>Office Location:</strong> <a href="https://www.google.com/maps/place/Department+of+Sociology/@36.0022543,-78.9392936,17z/data=!3m1!4b1!4m5!3m4!1s0x89ace6aefe680bdb:0xfe788099f23eced9!8m2!3d36.0022543!4d-78.9371049">254 Soc/Psych Hall</a><br />
-<strong>Office Hours:</strong> TBD<br />
+<strong>Office Hours:</strong> Tuesdays, 12 - 1:15 pm, Soc/Psych 254<br />
 <strong>Website:</strong> <a href="https://www.chrisbail.net" class="uri">https://www.chrisbail.net</a><br />
-<strong>Github:</strong> <a href="https://github.com/cbail" class="uri">https://github.com/cbail</a></p>
-<p><strong>Teaching Assistants:</strong> <a href="kathryn.coulter@duke.edu">Kate Coulter</a> (Office Hours: Tuesday 3-4PM - GH 230X) &amp; <a href="joseph.littell@duke.edu">Joe Littell</a> (Office Hours: Thursday 9-10AM - GH 230X)</p>
-<p><strong>Slack Channel for This Course:</strong> <a href="https://dukemids.slack.com/archives/CRSPSGFHR" class="uri">https://dukemids.slack.com/archives/CRSPSGFHR</a></p>
+<strong>Github:</strong> <a href="https://github.com/cbail" class="uri">https://github.com/cbail</a><br />
+<strong>Teaching Assistants:</strong> <a href="kathryn.coulter@duke.edu">Kate Coulter</a> / Tuesdays, 3 - 4 pm, Gross 230D &amp; <br> <a href="joseph.littell@duke.edu">Joe Littell</a> / Thursdays, 9 - 10 am, TBD<br />
+<strong>Slack Channel:</strong> <a href="https://dukemids.slack.com/archives/CRSPSGFHR" class="uri">https://dukemids.slack.com/archives/CRSPSGFHR</a><br />
+<strong>Dropbox (to submit Labs):</strong> <a href="https://sakai.duke.edu/portal/directtool/4049fefe-3ba1-43e8-9cba-a92758c96655/" class="uri">https://sakai.duke.edu/portal/directtool/4049fefe-3ba1-43e8-9cba-a92758c96655/</a></p>
 </div>
 <div id="course-description" class="section level2">
 <h2>Course Description</h2>
@@ -1494,26 +1565,22 @@ div.tocify {
 <h2>Prerequisites</h2>
 <p>R will be the main programming language for this course. Though the class will review basic programming techniques such as loops and functions, practical experiences with R is highly recommended. The majority of our time will be spent mastering the following R packages: <code>rvest</code>, <code>rtweet</code>, <code>lda</code>, <code>stm</code>, <code>ldaviz</code>, <code>textnets</code>, and <code>wordVectors</code> as well as a variety of functions in base R. General knowledge of data structures, basic programming, and rudimentary statistics is also required.</p>
 </div>
-<div id="required-readings" class="section level2">
-<h2>Required Readings</h2>
-<p>You must purchase one book for this class:</p>
+<div id="readings" class="section level2">
+<h2>Readings</h2>
 <p><a href="https://press.princeton.edu/books/ebook/9781400888184/bit-by-bit">Salganik, Matthew. <em>Bit by Bit: Social Research in the Digital Age.</em> Princeton: Princeton University Press</a></p>
-<p<<a href="https://www.bitbybitbook.com/en/1st-ed/preface/"> or read it online here </a></p>
-
 <p><a href="http://www.connectedthebook.com/">Nicholas Cristakis &amp; James Fowler. <em>Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives</em>, Hachette</a></p>
-
-<p>All other readings are linked on the syllabus or other course materials below.</p>
+<p>All other readings are linked under course material as indicated in the course schedule below.</p>
 </div>
 <div id="requirements" class="section level2">
 <h2>Requirements</h2>
 <p>Success in this course requires that you attend class, complete requisite readings before class, complete weekly homework assignments, complete a mid-term exam, and develop a final group project with several of your classmates. I describe each of these requirements in the following sections.</p>
-<div id="weekly-readings" class="section level4">
-<h4>Weekly Readings</h4>
+<div id="readings-1" class="section level4">
+<h4>Readings</h4>
 <p>You must complete all readings prior to class and come to our meetings prepared to discuss them.</p>
 </div>
-<div id="weekly-homework" class="section level4">
-<h4>Weekly Homework</h4>
-<p>Weekly homework exercises or “labs” are linked on the syllabus below and are designed to gauge your knowledge of the material presented during that week. The due date of each lab is also posted below.</p>
+<div id="labs" class="section level4">
+<h4>Labs</h4>
+<p>Weekly homework exercises or “labs” are linked in the course schedule below and are designed to gauge your knowledge of the material presented during that week. Each lab is designed to correspond with a major course topic, which will be indicated in the lab title. Each lab will be posted at least one week prior to its due date so that it is available for students at the start of the first lecture covering that topic and is due via <a href="https://sakai.duke.edu/portal/site/6f22e36f-1583-4afe-a6e0-ad75fb2229b9/tool-reset/4049fefe-3ba1-43e8-9cba-a92758c96655">Dropbox</a> after the second lecture on the topic, prior to the next scheduled lecture’s start. For example, Lab 1 which covers material presented on APIs (January 21 and 23) will be posted by the start of class, January 21, and will be due via Dropbox prior to January 28’s lecture.</p>
 </div>
 <div id="mid-term-exam" class="section level4">
 <h4>Mid-Term Exam</h4>
@@ -1560,7 +1627,7 @@ div.tocify {
 <p>I reserve the right to make changes to the syllabus, including project due dates and test dates. These changes will be announced as early as possible and no later than one week before materials are due.</p>
 </div>
 <div id="help-us-make-this-course-better" class="section level4">
-<h4>Help us Make this Course Better</h4>
+<h4>Help Us Make This Course Better</h4>
 <p>Creating high quality teaching materials is hard work! If you ever discover any errors or inconsistencies in the teaching materials on this site, please email one of the teaching assistants and cc me.</p>
 </div>
 </div>
@@ -1586,13 +1653,15 @@ div.tocify {
 </div>
 <div id="course-schedule-spring-2020" class="section level2">
 <h2>Course Schedule (Spring 2020)</h2>
-<p>We meet every Tuesday and Thursday unless otherwise noted. Readings must be completed before each class where they appear on the schedule below. Links to my presentation slides and annotated below are below as well.</p>
+<p>We meet every Tuesday and Thursday unless otherwise noted. Readings must be completed before each class where they appear on the schedule below. Lab assignments are linked below immediately prior to the date they are open (note that each lab’s due date is listed below as well as on the lab page). Links to my presentation slides and annotated code relevant to each lecture are below as well.</p>
+<div id="introduction-background" class="section level3">
+<h3><strong>Introduction &amp; Background</strong></h3>
 <div id="january-9-preliminaries" class="section level4">
 <h4><strong>January 9: Preliminaries</strong></h4>
 <p><strong><em>Topics:</em></strong><br />
-- Introductions and Housekeeping</p>
+Introductions and Housekeeping</p>
 <p><strong><em>Materials:</em></strong><br />
--None</p>
+None</p>
 <p><strong><em>Required reading</em></strong>:<br />
 - Salganik, Matthew, <em>Bit by Bit</em>, <a href="https://www.bitbybitbook.com/en/1st-ed/introduction/">Introduction</a> &amp; <a href="https://www.bitbybitbook.com/en/1st-ed/observing-behavior/">Observing Behavior</a></p>
 <p><strong><em>Suggested reading</em></strong>:<br />
@@ -1611,17 +1680,21 @@ Strengths and Weaknesses of Text as Data</p>
 - Salganik, Matthew, <em>Bit by Bit</em>, <a href="https://www.bitbybitbook.com/en/1st-ed/asking-questions/">Asking Questions</a>.<br />
 - Mullainathan, Sendhil. <a href="https://www.nytimes.com/2019/12/06/business/algorithm-bias-fix.html">Biased Algorithms Are Easier to Fix Than Biased People</a>, <em>New York Times</em></p>
 <p><strong><em>Suggested reading</em></strong>:<br />
-- Blumenstock et al. <a href="https://science.sciencemag.org/content/350/6264/1073">Predicting Poverty and Wealth from Mobile Phone Data</a>, <em>Science</em>. <br /></p>
+- Blumenstock et al. <a href="https://science.sciencemag.org/content/350/6264/1073">Predicting Poverty and Wealth from Mobile Phone Data</a>, <em>Science</em>. <br></p>
 </div>
 <div id="january-16-ethics-in-text-as-data" class="section level4">
 <h4><strong>January 16: Ethics in Text as Data</strong></h4>
 <p><strong><em>Required reading</em></strong>:<br />
-- Salganik, Matthew. <em>Bit by Bit</em>, <a href="https://www.bitbybitbook.com/en/1st-ed/ethics/">Ethics</a>.<br />
-<strong><em>Suggested reading</em></strong>:<br />
-- Robinson Meyer. <a href="https://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/">Everything We Know About Facebook’s Secret Mood Manipulation Experiment</a>, <em>the Atlantic</em>. <br></p>
+- Salganik, Matthew. <em>Bit by Bit</em>, <a href="https://www.bitbybitbook.com/en/1st-ed/ethics/">Ethics</a>.</p>
+<p><strong><em>Suggested reading</em></strong>:<br />
+- Robinson Meyer. <a href="https://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/">Everything We Know About Facebook’s Secret Mood Manipulation Experiment</a>, <em>the Atlantic</em>.</p>
 </div>
+</div>
+<div id="assignment-lab-1" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab1/lab1.html">Assignment: Lab 1</a></strong></h3>
+<p><em>- Due: January 28</em></p>
 <div id="january-21-application-programming-interfaces-part-1" class="section level4">
-<h4><strong>January 21: Application Programming Interfaces Part 1</strong></h4>
+<h4><strong>January 21: Application Programming Interfaces, Part 1</strong></h4>
 <p><strong><em>Topics:</em></strong><br />
 What is an API? Credentials, and Rate Limiting</p>
 <p><strong><em>Materials:</em></strong><br />
@@ -1629,56 +1702,71 @@ What is an API? Credentials, and Rate Limiting</p>
 <p><strong><em>Required Readings</em></strong><br />
 - Adam Kramer, Jamie Guillory, &amp; Jeffrey Hancock. <a href="https://www.pnas.org/content/111/24/8788">Emotional Contagion</a>, PNAS.</p>
 </div>
-<div id="january-23-application-programming-interfaces" class="section level4">
-<h4><strong>January 23: Application Programming Interfaces Part 2</strong></h4>
+<div id="january-23-application-programming-interfaces-part-2" class="section level4">
+<h4><strong>January 23: Application Programming Interfaces, Part 2</strong></h4>
 <p><strong><em>Topics:</em></strong><br />
 Working with the Twitter API</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html">Slides,</a> <a href="https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html">Annotated Code</a></p>
 </div>
+</div>
+<div id="assignment-lab-2" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab2/lab2.html">Assignment: Lab 2</a></strong></h3>
+<p><em>- Due: February 4</em></p>
 <div id="january-28-screen-scraping-part-1" class="section level4">
-<h4><strong>January 28: Screen-Scraping Part 1</strong></h4>
+<h4><strong>January 28: Screen-Scraping, Part 1</strong></h4>
 <p><strong><em>Topics:</em></strong><br />
 What is screen-scraping, character encoding</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html">Annotated Code</a></p>
 </div>
 <div id="january-30-screen-scraping-part-2" class="section level4">
-<h4><strong>January 30: Screen-Scraping Part 2</strong></h4>
-<p><strong><em>Topics:</em></strong> Reading and parsing HTML</p>
+<h4><strong>January 30: Screen-Scraping, Part 2</strong></h4>
+<p><strong><em>Topics:</em></strong><br />
+Reading and parsing HTML</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html">Annotated Code</a></p>
 </div>
+</div>
+<div id="assignment-lab-3" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab3/lab3.html">Assignment: Lab 3</a></strong></h3>
+<p><em>- Due: February 13</em></p>
 <div id="february-4-basic-text-analysis-part-1" class="section level4">
-<h4><strong>February 4: Basic Text Analysis Part 1</strong></h4>
-<p><strong><em>Topics:</em></strong> (GREP, Tokenization, stemming)</p>
+<h4><strong>February 4: Basic Text Analysis, Part 1</strong></h4>
+<p><strong><em>Topics:</em></strong><br />
+GREP, Tokenization, Stemming</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html">Annotated Code</a></p>
 <p><strong><em>Required reading</em></strong>:<br />
-<br /> - James Evans &amp; Pedro Aceves. <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-081715-074206">Machine Translation: Mining Text for Social Theory</a>. Annual Review of Sociology.</p>
+- James Evans &amp; Pedro Aceves. <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-081715-074206">Machine Translation: Mining Text for Social Theory</a>. Annual Review of Sociology.</p>
 <p><strong><em>Suggested reading</em></strong>:<br />
-- Justin Grimmer &amp; Brandon Stewart. <a href="https://www.cambridge.org/core/journals/political-analysis/article/text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-texts/F7AAC8B2909441603FEB25C156448F200">Text as Data: The Promises and Pitfalls of Automated Content Analysis</a>, Political Analysis.<br />
+- Justin Grimmer &amp; Brandon Stewart. <a href="https://www.cambridge.org/core/journals/political-analysis/article/text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-texts/F7AAC8B2909441603FEB25C156448F20">Text as Data: The Promises and Pitfalls of Automated Content Analysis</a>, Political Analysis.<br />
 - Bo Pang, Lillian Lee, &amp; Shivakumar Vaithyanathan. <a href="https://www.aclweb.org/anthology/W02-1011/">Thumbs up: Sentiment Classification using Machine Learning Techniques</a>.<br />
-- Kathleen Carley. <a href="https://www.sciencedirect.com/science/article/abs/pii/0304422X94900116">Extracting Culture Through Textual Analysis</a>. Poetics, 22:291-312.<br />
-<br></p>
+- Kathleen Carley. <a href="https://www.sciencedirect.com/science/article/abs/pii/0304422X94900116">Extracting Culture Through Textual Analysis</a>. Poetics, 22:291-312.</p>
 </div>
 <div id="february-6-no-class" class="section level4">
 <h4><strong>February 6: No Class</strong></h4>
-<p><br></p>
 </div>
-<div id="february-11-basic-text-analysis-part-2-text-pre-processing-ngrams" class="section level4">
-<h4>February 11: Basic Text Analysis Part 2 (Text pre-processing, ngrams)</h4>
+<div id="february-11-basic-text-analysis-part-2" class="section level4">
+<h4><strong>February 11: Basic Text Analysis, Part 2</strong></h4>
+<p><strong><em>Topics:</em></strong><br />
+Text pre-processing, n-grams</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html">Annotated Code</a></p>
 </div>
+</div>
+<div id="mid-term-exam-review" class="section level3">
+<h3><strong>Mid-Term Exam &amp; Review</strong></h3>
 <div id="february-13-mid-term-review" class="section level4">
 <h4><strong>February 13: Mid-Term Review</strong></h4>
-<p><br></p>
 </div>
 <div id="february-18-mid-term-exam" class="section level4">
 <h4><strong>February 18 Mid-Term Exam</strong></h4>
-<p><br></p>
 </div>
+</div>
+<div id="assignment-lab-4" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab4/lab4.html">Assignment: Lab 4</a></strong></h3>
+<p><em>- Due: February 27</em></p>
 <div id="february-20-dictionary-based-analysis" class="section level4">
 <h4><strong>February 20: Dictionary-Based Analysis</strong></h4>
 <p><strong><em>Materials:</em></strong><br />
@@ -1686,14 +1774,19 @@ What is screen-scraping, character encoding</p>
 <p><strong><em>Required reading</em></strong>:<br />
 - Kramer et al. 2014. Experimental evidence of massive-scale emotional contagion through social networks Proceedings of the National Academy of Sciences</p>
 </div>
-<div id="february-25-topic-modeling" class="section level4">
-<h4><strong>February 25: Topic Modeling</strong></h4>
+</div>
+<div id="assignment-lab-5" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab5/lab5.html">Assignment: Lab 5</a></strong></h3>
+<p><em>- Due: March 3</em></p>
+<div id="february-25-topic-modeling-part-1" class="section level4">
+<h4><strong>February 25: Topic Modeling, Part 1</strong></h4>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html">Annotated Code</a></p>
-<p><strong><em>Required reading</em></strong>: - Blei, David M. 2012. Probabilistic Topic Models. Communications of the ACM (Note: this is a challenging article, so don’t worry if you are not able to understand every last part).</p>
+<p><strong><em>Required reading</em></strong>:<br />
+- Blei, David M. 2012. Probabilistic Topic Models. Communications of the ACM (Note: this is a challenging article, so don’t worry if you are not able to understand every last part).</p>
 </div>
 <div id="february-27-topic-modeling-part-2" class="section level4">
-<h4><strong>February 27: Topic Modeling Part 2</strong></h4>
+<h4><strong>February 27: Topic Modeling, Part 2</strong></h4>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html">Annotated Code</a></p>
 </div>
@@ -1702,38 +1795,53 @@ What is screen-scraping, character encoding</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/">Slides,</a> <a href="https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html">Annotated Code</a></p>
 </div>
+</div>
+<div id="social-network-analysis" class="section level3">
+<h3><strong>Social Network Analysis</strong></h3>
 <div id="march-5-social-network-analysis" class="section level4">
 <h4><strong>March 5: Social Network Analysis</strong></h4>
-<p><strong><em>Topics:</em></strong> An Introduction to Social Network Analysis</p>
+<p><strong><em>Topics:</em></strong><br />
+An Introduction to Social Network Analysis</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit">Slides,</a></p>
 <p><strong><em>Required reading</em></strong>:<br />
-<br /> - Nicholas Cristakis &amp; James Fowler. [Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives], Chapter One. <br /><br /></p>
+- Nicholas Cristakis &amp; James Fowler. [Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives], Chapter One.</p>
 <p><strong><em>Additional reading</em></strong>:<br />
-- Duncan Watts. 1999. [<strong>Small Worlds</strong>], Chapter 1. Princeton University Press: 3-8. <br />
-- Kieran Healy. (2013). <a href="https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/">Using Metadata to Find Paul Revere</a>, Blog post. <br />
+- Duncan Watts. 1999. [<strong>Small Worlds</strong>], Chapter 1. Princeton University Press: 3-8.<br />
+- Kieran Healy. (2013). <a href="https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/">Using Metadata to Find Paul Revere</a>, Blog post.<br />
 - David Austin. (2006). <a href="http://www.ams.org/publicoutreach/feature-column/fcarc-pagerank">How Google Finds Your Needle in the Web’s Haystack</a>, American Mathematical Society Feature Column.</p>
 </div>
+</div>
+<div id="spring-break" class="section level3">
+<h3><strong>Spring Break</strong></h3>
 <div id="march-10-no-class-spring-break" class="section level4">
 <h4><strong>March 10: No Class (Spring Break)</strong></h4>
-<p><br></p>
 </div>
 <div id="march-12-no-class-spring-break" class="section level4">
 <h4><strong>March 12: No Class (Spring Break)</strong></h4>
-<p><br></p>
 </div>
-<div id="march-17-text-as-networks" class="section level4">
-<h4><strong>March 17: Text as Networks</strong></h4>
+</div>
+<div id="assignment-lab-6" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab6/lab6.html">Assignment: Lab 6</a></strong></h3>
+<p><em>- Due: March 24</em></p>
+<div id="march-17-text-networks-part-1" class="section level4">
+<h4><strong>March 17: Text Networks, Part 1</strong></h4>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html">Slides,</a> <a href="https://cbail.github.io/textasdata/text-networks/rmarkdown/Text_Networks.html">Annotated Code</a></p>
 </div>
-<div id="march-19-textnets" class="section level4">
-<h4><strong>March 19: Textnets</strong></h4>
+<div id="march-19-text-networks-part-2" class="section level4">
+<h4><strong>March 19: Text Networks, Part 2</strong></h4>
+<p><strong><em>Topics:</em></strong><br />
+Textnets</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html">Slides,</a> <a href="https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/rmarkdown/SICSS_Text_Networks.html">Annotated Code</a></p>
 </div>
+</div>
+<div id="assignment-lab-7" class="section level3">
+<h3><strong><a href="https://cbail.github.io/textasdata/labs/lab7/lab7.html">Assignment: Lab 7</a></strong></h3>
+<p><em>- Due: April 2</em></p>
 <div id="march-24-word-embeddings-part-1" class="section level4">
-<h4><strong>March 24: Word Embeddings Part 1</strong></h4>
+<h4><strong>March 24: Word Embeddings, Part 1</strong></h4>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/word2vec/rpres/word2vec.html">Slides,</a> <a href="https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html">Annotated Code</a></p>
 </div>
@@ -1742,6 +1850,9 @@ What is screen-scraping, character encoding</p>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/word2vec/rpres/word2vec.html">Slides,</a> <a href="https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html">Annotated Code</a></p>
 </div>
+</div>
+<div id="extensions" class="section level3">
+<h3><strong>Extensions</strong></h3>
 <div id="march-31-sentence-parsers" class="section level4">
 <h4><strong>March 31: Sentence Parsers</strong></h4>
 <p><strong><em>Topics:</em></strong><br />
@@ -1751,21 +1862,23 @@ Part-of-Speech Tagging, Sentence Parsing, and Named Entity Recognition</p>
 </div>
 <div id="april-2-no-class" class="section level4">
 <h4><strong>April 2: No Class</strong></h4>
-<p><br></p>
 </div>
 <div id="april-7-chat-bots" class="section level4">
 <h4><strong>April 7: Chat Bots</strong></h4>
 <p><strong><em>Materials:</em></strong><br />
 <a href="https://cbail.github.io/textasdata/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/">Slides,</a></p>
 </div>
+</div>
+<div id="final-project-presentations" class="section level3">
+<h3><strong>Final Project Presentations</strong></h3>
 <div id="april-9-final-project-presentations" class="section level4">
 <h4><strong>April 9: Final Project Presentations</strong></h4>
-<p>Groups 1-3 <br></p>
+<p><em>- Groups 1-3</em></p>
 </div>
 <div id="april-14-final-project-presentations" class="section level4">
 <h4><strong>April 14: Final Project Presentations</strong></h4>
-<p>Groups 3-6</p>
-<p><br></p>
+<p><em>- Groups 4-6</em></p>
+</div>
 </div>
 </div>
 

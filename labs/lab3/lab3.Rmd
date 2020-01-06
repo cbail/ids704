@@ -1,0 +1,15 @@
+---
+title: "Lab 3: Basic Text Analysis"
+output: 
+  html_document:
+    toc_float: true
+  
+---
+
+### Due: February 13
+
+This lab corresponds with the course material covering basic text analysis Submit your completed assignment as an R Markdown file to Dropbox by the start of class on February 13.
+
+1.
+
+2. 

@@ -1,0 +1,15 @@
+---
+title: "Lab 1: Application Programming Interfaces"
+output: 
+  html_document:
+    toc_float: true
+  
+---
+
+### Due: January 28
+
+This lab corresponds with the course material covering APIs. Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28.
+
+1.
+
+2. 
