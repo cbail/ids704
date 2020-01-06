@@ -10,8 +10,8 @@ output:
 ---
 
 <br>
-**[Text as Data Course](https://cbail.github.io/textasdata/Text_as_Data.html)**   
-**Chris Bail, PhD**  
+**[Text as Data Course](https://cbail.github.io/ids704/text_as_data.html)**   
+**Chris Bail, PhD**   
 **Duke University**  
 [www.chrisbail.net](http://www.chrisbail.net)  
 [github.com/cbail](https://github.com/cbail)  
@@ -51,7 +51,7 @@ Though anyone can make a request to the Google Maps API, getting data from Faceb
 <br>
 ![](apiexplorer.png)
 
-If you have a Facebook account--- and if you were logged in--- Facebook will generate credentials for you automatically in the form of something called an "Access Token." In the screenshot above, this appears in a bar towards the lower bottom part of the screen. This code will give you temporary authorization to make requests from Facebook's Graph API---but ONLY for data that you are allowed to access from your own Facebook page. If you click the blue "submit" button at the top right of the screen, you will see some output that contains your name and an ID that Facebook assigns to you. With some more effort, we could use this tool to make API calls to access our friend list, our likes, and so on, but for now, I'm simply trying to make the point that each person gets their own code that allows them to access some, but certainly not all, of the data on Facebook's API. If I were to write in "cocacola" instead of "me" to get access to data posted by this business, I would get an error message suggesting that my current credentials do not give me access to that data.
+If you have a Facebook account---and if you were logged in---Facebook will generate credentials for you automatically in the form of something called an "Access Token." In the screenshot above, this appears in a bar towards the lower bottom part of the screen. This code will give you temporary authorization to make requests from Facebook's Graph API---but ONLY for data that you are allowed to access from your own Facebook page. If you click the blue "submit" button at the top right of the screen, you will see some output that contains your name and an ID that Facebook assigns to you. With some more effort, we could use this tool to make API calls to access our friend list, our likes, and so on, but for now, I'm simply trying to make the point that each person gets their own code that allows them to access some, but certainly not all, of the data on Facebook's API. If I were to write in "cocacola" instead of "me" to get access to data posted by this business, I would get an error message suggesting that my current credentials do not give me access to that data.
 
 Credentials may not only determine your access to people with whom you are connected on a social network, but also other privileges you may have vis-a-vis an API. For example, many APIs charge money for access to their data or services, and thus you will only receive your credentials after setting up an account. As we will see below, some sites also require you to have multiple types of credentials which can be described using a variety of verbiage such as "tokens","keys", or "secrets."
 

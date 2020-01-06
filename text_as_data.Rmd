@@ -1,10 +1,9 @@
 ---
 title: ""
 output: 
-  html_document:
+  rmarkdown::html_document:
     toc: true
     toc_float: true
-  
 ---
 
 ![](Text_As_Data_Cover.png)
@@ -132,7 +131,7 @@ Many of the most important advances in computational social science appear first
 We meet every Tuesday and Thursday unless otherwise noted. Readings must be completed before each class where they appear on the schedule below. Lab assignments are linked below immediately prior to the date they are open (note that each lab's due date is listed below as well as on the lab page). Links to my presentation slides and annotated code relevant to each lecture are below as well.
 
 
-### **Introduction & Background**
+### **Introduction**
 
 #### **January 9: Preliminaries**
 ***Topics:***  
@@ -148,15 +147,15 @@ None
 - David Donoho. [50 Years of Data Science](https://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf)  
 - Lazer et al. [Computational Social Science](https://science.sciencemag.org/content/323/5915/721), *Science*.  
 - Lazer et al. [Life in the network: the coming age of computational social science](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2745217/), *Science*.  
-- Watts, Duncan [Should social science be more solution-oriented?](https://www.nature.com/articles/s41562-016-0015), *Nature*
+- Watts, Duncan. [Should social science be more solution-oriented?](https://www.nature.com/articles/s41562-016-0015), *Nature*
 <br>
 
 #### **January 14: Introduction to Text as Data**
 ***Topics:***  
 Strengths and Weaknesses of Text as Data
 
-***Materials:***  
-[Slides](https://cbail.github.io/textasdata/strengths-weaknesses/rmarkdown/Strengths_and_Weaknesses.html)
+***Materials:***   
+[Slides, ](https://cbail.github.io/ids704/strengths-weaknesses/Rpres/Strengths%20and%20Weaknesses.html) [ Document](https://cbail.github.io/ids704/strengths-weaknesses/rmarkdown/Strengths_and_Weaknesses.html)
 
 ***Required reading***:  
 - Salganik, Matthew, *Bit by Bit*, [Asking Questions](https://www.bitbybitbook.com/en/1st-ed/asking-questions/).  
@@ -174,7 +173,7 @@ Strengths and Weaknesses of Text as Data
 - Robinson Meyer. [Everything We Know About Facebook's Secret Mood Manipulation Experiment](https://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/), *the Atlantic*.
 
 
-### **[Assignment: Lab 1](https://cbail.github.io/textasdata/labs/lab1/lab1.html)**
+### **[Assignment: Lab 1](https://cbail.github.io/ids704/labs/lab1/lab1.html)**
 *- Due: January 28*
 
 #### **January 21: Application Programming Interfaces, Part 1**
@@ -182,7 +181,7 @@ Strengths and Weaknesses of Text as Data
 What is an API? Credentials, and Rate Limiting
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html) [Annotated Code](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)
+[Slides, ](https://cbail.github.io/ids704/apis/Rpres/APIs.html) [Annotated Code](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html)
 
 ***Required Readings***  
 - Adam Kramer, Jamie Guillory, & Jeffrey Hancock. [Emotional Contagion](https://www.pnas.org/content/111/24/8788), PNAS.
@@ -192,10 +191,10 @@ What is an API? Credentials, and Rate Limiting
 Working with the Twitter API
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html) [Annotated Code](https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html)
+[Slides, ](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html) [Annotated Code](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html)
 
 
-### **[Assignment: Lab 2](https://cbail.github.io/textasdata/labs/lab2/lab2.html)**
+### **[Assignment: Lab 2](https://cbail.github.io/ids704/labs/lab2/lab2.html)**
 *- Due: February 4* 
 
 #### **January 28: Screen-Scraping, Part 1** 
@@ -203,16 +202,16 @@ Working with the Twitter API
 What is screen-scraping, character encoding
 
 ***Materials:***  
-[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/) [Annotated Code](https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html)
+[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/) [Annotated Code](https://cbail.github.io/ids704/screenscraping/rmarkdown/Screenscraping_in_R.html)
 
 #### **January 30: Screen-Scraping, Part 2**
 ***Topics:***  
 Reading and parsing HTML
 
 ***Materials:***  
-[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/) [Annotated Code](https://cbail.github.io/textasdata/screenscraping/rmarkdown/Screenscraping_in_R.html)
+[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/) [Annotated Code](https://cbail.github.io/ids704/screenscraping/rmarkdown/Screenscraping_in_R.html)
 
-### **[Assignment: Lab 3](https://cbail.github.io/textasdata/labs/lab3/lab3.html)**
+### **[Assignment: Lab 3](https://cbail.github.io/ids704/labs/lab3/lab3.html)**
 *- Due: February 13* 
 
 #### **February 4: Basic Text Analysis, Part 1** 
@@ -220,7 +219,7 @@ Reading and parsing HTML
 GREP, Tokenization, Stemming
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 ***Required reading***:  
 - James Evans & Pedro Aceves. [Machine Translation: Mining Text for Social Theory](https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-081715-074206). Annual Review of Sociology.  
@@ -237,7 +236,7 @@ GREP, Tokenization, Stemming
 Text pre-processing, n-grams
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/textasdata/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 
 ### **Mid-Term Exam & Review**
@@ -247,37 +246,35 @@ Text pre-processing, n-grams
 #### **February 18 Mid-Term Exam**
 
 
-### **[Assignment: Lab 4](https://cbail.github.io/textasdata/labs/lab4/lab4.html)**
+### **[Assignment: Lab 4](https://cbail.github.io/ids704/labs/lab4/lab4.html)**
 *- Due: February 27* 
 
 #### **February 20: Dictionary-Based Analysis**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/dictionary-methods/Rpres/Dictionary%20Based%20Analysis.html) [Annotated Code](https://cbail.github.io/textasdata/dictionary-methods/rmarkdown/Dictionary-Based_Text_Analysis.html)
+[Slides, ](https://cbail.github.io/ids704/dictionary-methods/Rpres/Dictionary%20Based%20Analysis.html) [Annotated Code](https://cbail.github.io/ids704/dictionary-methods/rmarkdown/Dictionary-Based_Text_Analysis.html)
 
 ***Required reading***:  
 - Kramer et al. 2014. Experimental evidence of massive-scale emotional contagion through social networks Proceedings of the National Academy of Sciences
 
 
-### **[Assignment: Lab 5](https://cbail.github.io/textasdata/labs/lab5/lab5.html)**
+### **[Assignment: Lab 5](https://cbail.github.io/ids704/labs/lab5/lab5.html)**
 *- Due: March 3* 
 
 #### **February 25: Topic Modeling, Part 1**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
 
 ***Required reading***:  
 - Blei, David M. 2012. Probabilistic Topic Models. Communications of the ACM (Note: this is a challenging article, so don’t worry if you are not able to understand every last part).
 
 #### **February 27: Topic Modeling, Part 2**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
 
 #### **March 3: Structural Topic Models**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
 
-
-### **Social Network Analysis**
 #### **March 5: Social Network Analysis**
 ***Topics:***  
 An Introduction to Social Network Analysis
@@ -299,44 +296,43 @@ American Mathematical Society Feature Column.
 #### **March 12: No Class (Spring Break)**
 
 
-### **[Assignment: Lab 6](https://cbail.github.io/textasdata/labs/lab6/lab6.html)**
+### **[Assignment: Lab 6](https://cbail.github.io/ids704/labs/lab6/lab6.html)**
 *- Due: March 24* 
 
 #### **March 17: Text Networks, Part 1**
 ***Materials:***  
-[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://cbail.github.io/textasdata/text-networks/rmarkdown/Text_Networks.html)
+[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://cbail.github.io/ids704/text-networks/rmarkdown/Text_Networks.html)
 
 #### **March 19: Text Networks, Part 2**
 ***Topics:***  
 Textnets
 
 ***Materials:***  
-[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/rmarkdown/SICSS_Text_Networks.html)
+[Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://compssocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/rmarkdown/SICSS_Text_Networks.html)
 
 
-### **[Assignment: Lab 7](https://cbail.github.io/textasdata/labs/lab7/lab7.html)**
+### **[Assignment: Lab 7](https://cbail.github.io/ids704/labs/lab7/lab7.html)**
 *- Due: April 2* 
 
 #### **March 24: Word Embeddings, Part 1**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html)
+[Slides, ](https://cbail.github.io/ids704/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/ids704/word2vec/rmarkdown/word2vec.html)
 
 #### **March 26: Word Embeddings Part 2**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/textasdata/word2vec/rmarkdown/word2vec.html)
+[Slides, ](https://cbail.github.io/ids704/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/ids704/word2vec/rmarkdown/word2vec.html)
 
-### **Extensions**
 #### **March 31: Sentence Parsers**
 ***Topics:***  
 Part-of-Speech Tagging, Sentence Parsing, and Named Entity Recognition
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/tagging-parsing-ner/Taggingparsing.html)
+[Slides, ](https://cbail.github.io/ids704/tagging-parsing-ner/Taggingparsing.html)
 
 #### **April 2: No Class**
 #### **April 7: Chat Bots**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/textasdata/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
+[Slides, ](https://cbail.github.io/ids704/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
 
 ### **Final Project Presentations**
 #### **April 9: Final Project Presentations**
