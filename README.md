@@ -35,6 +35,6 @@ All of the materials for this course are available online via the links above. M
 
 ## How can I get started?
 
-This course assumes basic familiarity with the R software. If you are new to R, I recommend the sequence of online courses described on [this website] (https://compsocialscience.github.io/summer-institute/2018/#pre-arrival) to get you started.
+This course assumes basic familiarity with the R software. If you are new to R, I recommend the sequence of online courses described on [this website](https://compsocialscience.github.io/summer-institute/2018/#pre-arrival) to get you started.
 
 
