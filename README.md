@@ -1,6 +1,6 @@
-# Text as Data
+# IDS 704: Text as Data (MIDS Course)
 
-Welcome to my course entitled "Text as Data." On this page, you will find an overview of the course, a description of each topic covered in the course, and a series of instructions about how to access all of the software and materials necessary for the course.
+Welcome to my MIDS-specific version of my course entitled "Text as Data." On this page, you will find an overview of the course, a description of each topic covered in the course, and a series of instructions about how to access all of the software and materials necessary for the course. To view the information contained in this repository via the course website, click [here](https://cbail.github.io/ids704/text_as_data.html).
 
 ## What is Text as Data?
 
@@ -27,7 +27,7 @@ This class covers a range of different topics that build on top of each other. F
 
 ## Who are You?
 
-I am a Professor of Sociology, Public Policy, and Data Science at Duke University who studies political polarization on social media. You can learn more about my research [here](www.chrisbail.net). Much of the material in the tutorials above draws upon my own research and text analysis techniques I've developed. Yet I also draw heavily on a number of other excellent tutorials by a range of different people who I tried to remember to thank in each tutorial above---if I forgot to recognize your work, please email me!
+I am a Professor of Sociology, Public Policy, and Data Science at Duke University who studies political polarization on social media. You can learn more about my research [here](http://www.chrisbail.net). Much of the material in the tutorials above draws upon my own research and text analysis techniques I've developed. Yet I also draw heavily on a number of other excellent tutorials by a range of different people who I tried to remember to thank in each tutorial above---if I forgot to recognize your work, please email me!
 
 ## How can I Access the Course Materials?
 
