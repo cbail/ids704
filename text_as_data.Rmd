@@ -18,7 +18,7 @@ output:
 **Office Hours:** Tuesdays, 12 - 1:15 pm, Soc/Psych 254  
 **Website:** https://www.chrisbail.net  
 **Github:** https://github.com/cbail  
-**Teaching Assistants:** [Kate Coulter](kathryn.coulter@duke.edu) / Tuesdays, 3 - 4 pm, Gross 230D & <br> [Joe Littell](joseph.littell@duke.edu) /  Thursdays, 9 - 10 am, TBD  
+**Teaching Assistants:** [Kate Coulter](kathryn.coulter@duke.edu) / Tuesdays, 3 - 4 pm, Gross 230D & <br> [Joe Littell](joseph.littell@duke.edu) /  Thursdays, 9 - 10 am, Gross 230K  
 **Slack Channel:** https://dukemids.slack.com/archives/CRSPSGFHR  
 **Dropbox (to submit Labs):** https://sakai.duke.edu/portal/directtool/4049fefe-3ba1-43e8-9cba-a92758c96655/  
 

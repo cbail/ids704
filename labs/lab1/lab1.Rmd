@@ -10,6 +10,13 @@ output:
 
 This lab corresponds with the course material covering APIs. Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28.
 
+**From API Markdown - Facebook Graph API**
+
+The Graph API explorer allows you to search for different fields. Take a moment and try to see whether you can make a call for other types of information about yourself. To do this, you'll have to request different levels of "permission" using the dropdown menu on the right hand side of the explorer tool page. You can populate the syntax for different fields using the "search for a field" box on the upper right hand side of the page. Don't worry if you can't get the query language right for now---specifying the syntax of an API call requires mastering each API's documentation, which can take a very long time. This tool tries to help you, but it does not work perfectly and constructing the right call may require spending quite a bit of time reading through the API documentation. More importantly-- as you will soon see-- there are a number of R packages that contain functions that make API calls for you that will save you the time and energy necessary to learn the syntax specific to each API.
+
+**From API Markdown - Twitter API**
+
+To reinforce the skills you've learned in this section, try the following: 1) Collect the most recent 100 tweets from CNN; 2) determine how many people follow CNN on twitter; and, 3) determine if CNN is currently tweeting about any subjects that are trending in your area.
 1.
 
 2. 
