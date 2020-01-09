@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Home"
 output: 
   rmarkdown::html_document:
     toc: true
@@ -81,6 +81,7 @@ Participation: 10%
 
 I am a very reasonable person and understand that sometimes “life happens” and you may not be able to complete your work in a timely manner. I will therefore carefully consider all explanations for deviance from the general course policies outlined below.
 
+
 #### Attendance
 
 Attendance for all lectures is mandatory. If you have a University-excused reason to miss please follow the proper procedure for letting your TA know about it. You are responsible for knowing and acting in accordance with University policy.
@@ -92,6 +93,10 @@ Understand and follow the Duke Community Standard. Plagiarism, cheating or other
 #### Mental Health and Stress
 
 If you are suffering from stress, depression, anxiety, or any other mental health issues that are common among Duke students, please consider visiting Counseling and Psychological Services (CAPS) on campus, who provide support on everything from minor to major mental health issues.
+
+[Duke Reach](https://studentaffairs.duke.edu/dukereach1) - ( [email](dukereach@duke.edu) ) serves to direct students and faculty alike to resources that can help them during their times of need. These resources include the Student Behavioral Assessment team, the Duke Wellness Center, and many more resources.
+
+
 
 #### Extra-Credit Policy
 
