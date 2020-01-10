@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: ""
 output: 
   rmarkdown::html_document:
     toc: true
