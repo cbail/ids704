@@ -189,7 +189,7 @@ What is an API? Credentials, and Rate Limiting
 [Slides, ](https://cbail.github.io/ids704/apis/Rpres/APIs.html) [Annotated Code](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html)
 
 ***Required Readings***  
-- Adam Kramer, Jamie Guillory, & Jeffrey Hancock. [Emotional Contagion](https://www.pnas.org/content/111/24/8788), PNAS.
+- Matthew Salganik. [Emotional Contagion](https://www.pnas.org/content/111/24/8788), PNAS.
 
 #### **January 23: Application Programming Interfaces, Part 2**
 ***Topics:***  
@@ -197,6 +197,10 @@ Working with the Twitter API
 
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html) [Annotated Code](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html)
+
+***Required Readings*** 
+- Chris Bail, et al. [**Exposure to opposing views on social media can increase political polarization**](https://www.pnas.org/content/115/37/9216), *Proceedings of the National Academy of Sciences*
+
 
 
 ### **[Assignment: Lab 2](https://cbail.github.io/ids704/labs/lab2/lab2.html)**
@@ -209,12 +213,18 @@ What is screen-scraping, character encoding
 ***Materials:***  
 [Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/) [Annotated Code](https://cbail.github.io/ids704/screenscraping/rmarkdown/Screenscraping_in_R.html)
 
+***Required Readings*** 
+Gary King et al. ["Reverse-engineering censorship in China: Randomized experimentation and participant observation"](https://gking.harvard.edu/files/gking/files/chinasci2.pdf), *Science*
+
 #### **January 30: Screen-Scraping, Part 2**
 ***Topics:***  
 Reading and parsing HTML
 
 ***Materials:***  
 [Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/) [Annotated Code](https://cbail.github.io/ids704/screenscraping/rmarkdown/Screenscraping_in_R.html)
+
+***Required Readings:***
+Elizabeth Bruch et al. 2018. ["Aspirational pursuit of mates in online dating markets"](https://advances.sciencemag.org/content/4/8/eaap9815), *Science Advances*
 
 ### **[Assignment: Lab 3](https://cbail.github.io/ids704/labs/lab3/lab3.html)**
 *- Due: February 13* 
@@ -259,7 +269,7 @@ Text pre-processing, n-grams
 [Slides, ](https://cbail.github.io/ids704/dictionary-methods/Rpres/Dictionary%20Based%20Analysis.html) [Annotated Code](https://cbail.github.io/ids704/dictionary-methods/rmarkdown/Dictionary-Based_Text_Analysis.html)
 
 ***Required reading***:  
-- Kramer et al. 2014. Experimental evidence of massive-scale emotional contagion through social networks Proceedings of the National Academy of Sciences
+- Chris Bail et al. ["Channeling Hearts and Minds"](https://journals.sagepub.com/doi/full/10.1177/0003122417733673), *American Sociological Review*
 
 
 ### **[Assignment: Lab 5](https://cbail.github.io/ids704/labs/lab5/lab5.html)**
