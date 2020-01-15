@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -268,7 +268,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -330,6 +329,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -341,18 +341,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -378,16 +366,30 @@ $(document).ready(function () {
 </div>
 
 
-<div id="due-january-28" class="section level3">
-<h3>Due: January 28</h3>
-<p>This lab corresponds with the course material covering APIs. Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28.</p>
-<p><strong>From API Markdown - Facebook Graph API</strong></p>
-<p>The Graph API explorer allows you to search for different fields. Take a moment and try to see whether you can make a call for other types of information about yourself. To do this, you’ll have to request different levels of “permission” using the dropdown menu on the right hand side of the explorer tool page. You can populate the syntax for different fields using the “search for a field” box on the upper right hand side of the page. Don’t worry if you can’t get the query language right for now—specifying the syntax of an API call requires mastering each API’s documentation, which can take a very long time. This tool tries to help you, but it does not work perfectly and constructing the right call may require spending quite a bit of time reading through the API documentation. More importantly– as you will soon see– there are a number of R packages that contain functions that make API calls for you that will save you the time and energy necessary to learn the syntax specific to each API.</p>
-<p><strong>From API Markdown - Twitter API</strong></p>
-<p>To reinforce the skills you’ve learned in this section, try the following: 1) Collect the most recent 100 tweets from CNN; 2) determine how many people follow CNN on twitter; and, 3) determine if CNN is currently tweeting about any subjects that are trending in your area. 1.</p>
-<ol start="2" style="list-style-type: decimal">
-<li></li>
-</ol>
+<div id="lab-01-application-programming-interfaces" class="section level1">
+<h1>Lab 01: Application Programming Interfaces</h1>
+<div id="due-january-28th-2020" class="section level3">
+<h3>Due: January 28th 2020</h3>
+<p>This lab corresponds with the course material covering Application Programming Interfaces(APIs).</p>
+<p>To reinforce the skills you’ve learned in this section, you are asked to work through the a set of tasks. Each task will work with a different functionality of the rtweet package as shown in class. The <a href="https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html">instruction</a> given by Professor Bail, and the <a href="https://rtweet.info/">RTweet documentation</a> is all that is required for the successful completion of this lab. If at any time you require additional help, feel free to reach out to your TAs <a href="joseph.littell@duke.edu">Joe</a> and <a href="kathryn.coulter@duke.edu">Kate</a>, Professor Bail</p>
+<p>Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28th. If you are unable to use a twitter developer account, or turn in this lab for any reason, please contact <a href="joseph.littell@duke.edu">Joe</a> or <a href="kathryn.coulter@duke.edu">Kate</a> prior to the end of class on January 23rd in order to discuss the issue and resolve the situation.</p>
+<p>Each question will be annotated with it’s points. The lab in total is worth 10 points.</p>
+</div>
+<div id="questions" class="section level3">
+<h3><strong>Questions</strong></h3>
+<p>In order to answer these questions you will need an active twitter developer account. If you do not have one, please refer to the pervious <a href="https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html">instruction</a> and create the account.</p>
+<p>Utlizing your Twitter API credentials create a token to access data utilizing the RTweet package. In order to keep your credentials safe, once completing the lab, delete the cell concerning your token. Ensure that you have run all of your cells and completed the lab before you do so.</p>
+<p><strong>Question 1 (1 points):</strong> Utilizing the create_token() function, create a token to access the Twitter API using your app_name, consumer_key, consumer_token, access_token, and access_secret. Keep the code creating the token then delete the variables that hold your sepecific keys.</p>
+<p><strong>Question 2 (1 points):</strong> Utilizing the stream_tweet() function, collect a random sampling of 2 minutes of tweets.</p>
+<p><strong>Question 3 (1 points):</strong> Utilizing the get_trends() function, collect the trends happening in North Carolina.</p>
+<p><strong>Question 4 (1 points):</strong> Utilizing the search_tweets() function, collect 1000 tweets for the hashtag #SuperBowl.</p>
+<p><strong>Question 5 (1 points):</strong> Utilizing the search_users() function, collect 100 users for the hashtag #SuperBowl.</p>
+<p><strong>Question 6 (1 points):</strong> Utilizing the ts_plot() function, plot the 1000 tweets collected from Question 3.</p>
+<p><strong>Question 7 (1 points):</strong> Utilizing the lookup_user() function, collect user data from “<span class="citation">@espn</span>”</p>
+<p><strong>Question 8 (1 points):</strong> Utlizing the get_timeline() function, collect the most 500 recent tweets from “<span class="citation">@espn</span>”</p>
+<p><strong>Question 9 (1 points):</strong> Utilizing the get_followers() function, collect the user ID of 7,500 espn followers.</p>
+<p><strong>Question 10 (1 points):</strong> Utilizng the get_retweeters() function, collect the retweet of ESPN’s most recent tweet</p>
+</div>
 </div>
 
 
@@ -407,6 +409,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

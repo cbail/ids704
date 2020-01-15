@@ -5,18 +5,41 @@ output:
     toc_float: true
   
 ---
+# Lab 01: Application Programming Interfaces
+### Due: January 28th 2020
 
-### Due: January 28
+This lab corresponds with the course material covering Application Programming Interfaces(APIs). 
 
-This lab corresponds with the course material covering APIs. Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28.
+To reinforce the skills you've learned in this section, you are asked to work through the a set of tasks. Each task will work with a different functionality of the rtweet package as shown in class. The [instruction](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html) given by Professor Bail, and the [RTweet documentation](https://rtweet.info/) is all that is required for the successful completion of this lab. If at any time you require additional help, feel free to reach out to your TAs [Joe](joseph.littell@duke.edu) and [Kate](kathryn.coulter@duke.edu), Professor Bail
 
-**From API Markdown - Facebook Graph API**
+Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28th. If you are unable to use a twitter developer account, or turn in this lab for any reason, please contact [Joe](joseph.littell@duke.edu) or [Kate](kathryn.coulter@duke.edu) prior to the end of class on January 23rd in order to discuss the issue and resolve the situation.
 
-The Graph API explorer allows you to search for different fields. Take a moment and try to see whether you can make a call for other types of information about yourself. To do this, you'll have to request different levels of "permission" using the dropdown menu on the right hand side of the explorer tool page. You can populate the syntax for different fields using the "search for a field" box on the upper right hand side of the page. Don't worry if you can't get the query language right for now---specifying the syntax of an API call requires mastering each API's documentation, which can take a very long time. This tool tries to help you, but it does not work perfectly and constructing the right call may require spending quite a bit of time reading through the API documentation. More importantly-- as you will soon see-- there are a number of R packages that contain functions that make API calls for you that will save you the time and energy necessary to learn the syntax specific to each API.
+Each question will be annotated with it's points. The lab in total is worth 10 points.
 
-**From API Markdown - Twitter API**
+### **Questions**
 
-To reinforce the skills you've learned in this section, try the following: 1) Collect the most recent 100 tweets from CNN; 2) determine how many people follow CNN on twitter; and, 3) determine if CNN is currently tweeting about any subjects that are trending in your area.
-1.
+In order to answer these questions you will need an active twitter developer account. If you do not have one, please refer to the pervious [instruction](https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html) and create the account.
 
-2. 
+Utlizing your Twitter API credentials create a token to access data utilizing the RTweet package. In order to keep your credentials safe, once completing the lab, delete the cell concerning your token. Ensure that you have run all of your cells and completed the lab before you do so.
+
+**Question 1 (1 points):** Utilizing the create_token() function, create a token to access the Twitter API using your app_name, consumer_key, consumer_token, access_token, and access_secret. Keep the code creating the token then delete the variables that hold your sepecific keys.
+
+**Question 2 (1 points):** Utilizing the stream_tweet() function, collect a random sampling of 2 minutes of tweets.
+
+**Question 3 (1 points):** Utilizing the get_trends() function, collect the trends happening in North Carolina.
+
+**Question 4 (1 points):** Utilizing the search_tweets() function, collect 1000 tweets for the hashtag #SuperBowl.
+
+**Question 5 (1 points):** Utilizing the search_users() function, collect 100 users for the hashtag #SuperBowl.
+
+**Question 6 (1 points):** Utilizing the ts_plot() function, plot the 1000 tweets collected from Question 3.
+
+**Question 7 (1 points):** Utilizing the lookup_user() function, collect user data from "@espn"
+
+**Question 8 (1 points):** Utlizing the get_timeline() function, collect the most 500 recent tweets from "@espn"
+
+**Question 9 (1 points):** Utilizing the get_followers() function, collect the user ID of 7,500 espn followers.
+
+**Question 10 (1 points):** Utilizng the get_retweeters() function, collect the retweet of ESPN's most recent tweet
+
+
