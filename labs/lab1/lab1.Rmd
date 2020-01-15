@@ -5,7 +5,6 @@ output:
     toc_float: true
   
 ---
-# Lab 01: Application Programming Interfaces
 ### Due: January 28th 2020
 
 This lab corresponds with the course material covering Application Programming Interfaces(APIs). 
