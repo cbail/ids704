@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -268,7 +268,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -330,6 +329,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -341,18 +341,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -380,14 +368,25 @@ $(document).ready(function () {
 
 <div id="due-january-28" class="section level3">
 <h3>Due: January 28</h3>
-<p>This lab corresponds with the course material covering APIs. Submit your completed assignment as an R Markdown file to Dropbox by the start of class on January 28.</p>
-<p><strong>From API Markdown - Facebook Graph API</strong></p>
-<p>The Graph API explorer allows you to search for different fields. Take a moment and try to see whether you can make a call for other types of information about yourself. To do this, you’ll have to request different levels of “permission” using the dropdown menu on the right hand side of the explorer tool page. You can populate the syntax for different fields using the “search for a field” box on the upper right hand side of the page. Don’t worry if you can’t get the query language right for now—specifying the syntax of an API call requires mastering each API’s documentation, which can take a very long time. This tool tries to help you, but it does not work perfectly and constructing the right call may require spending quite a bit of time reading through the API documentation. More importantly– as you will soon see– there are a number of R packages that contain functions that make API calls for you that will save you the time and energy necessary to learn the syntax specific to each API.</p>
-<p><strong>From API Markdown - Twitter API</strong></p>
-<p>To reinforce the skills you’ve learned in this section, try the following: 1) Collect the most recent 100 tweets from CNN; 2) determine how many people follow CNN on twitter; and, 3) determine if CNN is currently tweeting about any subjects that are trending in your area. 1.</p>
-<ol start="2" style="list-style-type: decimal">
-<li></li>
-</ol>
+<p><strong>Introduction</strong></p>
+<p>This lab is meant to work through your understanding of Application Programing Interfaces, or APIs. For it we will be using the Twitter API and the RTweet package in R. This lab is not meant to trick you in anyway, however if you run into issues or errors, please reach out to your TAs <a href="kathryn.coulter@duke.edu">Kate</a> and <a href="joseph.littell@duke.edu">Joe</a> through email or slack.</p>
+<p>If you have issues getting creidtionals for Twitter following the first API class, please reach out to Kate or Joe immediately. The best practices are creating a brand new account from your Duke.edu email, stating that you’re in the United States, and this is a graduate school project. Many of the red flags are avoided in this case.</p>
+<p>This lab will have 10 questions that will count for 1 point each. In order to recieve full credit you must turn in a .RMD file individually by the due date with all your code and cells run. You may work with others but each student is expected to turn in their own .RMD file. This process will be consistent throughout your labs, however there is one unique caveat with Lab 01. Since you must create a token you are asked to do so in two steps. The first, aligning your twitter tokens and secrets to a set of variables, then, the second, using those variables to create a twitter token for API use. After you have completed your lab and ran all of the cells, please go back and delete the cell that has your private information.</p>
+<p><strong>Resources</strong></p>
+<p>Before asking any basic questions, please review the following resources;</p>
+<p><a href="https://cbail.github.io/ids704/apis/Rpres/APIs.html">Slides</a> <br> <a href="https://cbail.github.io/ids704/apis/rmarkdown/Application_Programming_interfaces.html">Annotated Code</a><br> <a href="https://rtweet.info/reference/index.html">Rtweet Documentation</a></p>
+<p><strong>Questions</strong></p>
+<p><em>Question 1:</em> As taught in the lecture, many APIs require authentication to ensure proper use of data. Twitter is one such company that does so. In order to access the underlying Twitter API, you must create a token using your own personal information as instructed during lecture. Utilizing the create_token() function of rtweet, create a token for further use.</p>
+<p><em>Question 2:</em> Now that we have access to the data through our token, we can start looking at tweets. Utilizing the get_timeline() function, collect the most recent 250 tweets from <span class="citation">@espn</span>. Inspect the contents of those tweets.</p>
+<p><em>Question 3:</em> The case for most social media is very few individuals that use a platform actually directly create content, in this case ‘tweet’. Therefore many users will use other functions such as favorite or retweet other user’s content. As such you may want to see what other ways people are participating in a platform. Utilizing the get_favorites() function, gather <span class="citation">@PatrickMahomes</span> favorites/likes.</p>
+<p><em>Question 4:</em> As with favorites, many users retweet, essentially sharing content other users have made. utilizing the get_retweet() get_retweeters() functions to gather the retweets of this Patrick Mahomes’ tweet (status: 857944539029483520).</p>
+<p><em>Question 5:</em> Social media is very good at giving insight on how users interaction between themselve. Later in the course we will touch on social network analysis, but there are a number of functions that can help us build a network once we aquire those skills. Part of understanding a network is to look at who follows who, essentially who is being given content from a user directly. Utilizing the get_followers() and get_friends () functions, collect <span class="citation">@PatrickMahome</span> followers, and who he follows respectively.</p>
+<p><em>Question 6:</em> Sometimes when using social media you’re not exactly sure what you’re looking for directly. Having specific users names, or content IDs is very helpful, but not always directly available without some prior research. Twitter specifically has functions that allow you to look up what topic are popular in certain regions, which can lead to more specific information about a specific item you’re looking for. Utilizing the get_trends() function, identify trends that are happening in North Carolina.</p>
+<p><em>Question 7:</em> If trends or stream don’t work in content collection, you can search tweets using key words or hashtags. With our basic account, we are only allow to search tweets made in the last 6-9 days, and 18,000 total at a time. Utilizing the search_tweets() function, collect 5000 tweets containing the keywords ‘superbowl’ and ‘sbliv’</p>
+<p><em>Question 8:</em> Similarly, you can search straight from the stream as posts are being created. You can choose a random sampling or narrow it down by user_id or key word. Without narrowing down the stream, a lot of random content, much without context will be found. Utlizing the stream_tweets() function, collect 2 minutes worth of tweets.</p>
+<p><em>Question 9:</em> Because tweets are timestamped, we can plot content to determine patterns or relevancy of post. Utilizng the ts_data() and ts_plot() functions, plot the content of from question 7 concening the super bowl.</p>
+<p><em>Question 10:</em> Another interesting function is geotagging, since most tweets are made from cellular phones, their data can contain positiona data that can be tracked. Typically this opted out, but about 10% of posts are geotagged. Utilizng the Map package in R, plot the geotagged tweets from question 7.</p>
+<p><strong>End of Lab 01 Assignment</strong></p>
 </div>
 
 
@@ -407,6 +406,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
