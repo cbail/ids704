@@ -29,32 +29,59 @@ transition: fade
   Twitter: https://www.twitter.com/chris_bail
 
 
-Political Polarization
 ========================================================
+&nbsp; 
 
-<img src="Big Data.png" height="600" />
-
-False Polarization
-========================================================
-<img src="misperceptions.png" height="600" />
+<img src="usnews.png" height="300" />
 
 False Polarization
 ========================================================
-<img src="democrats.png" height="600" />
+&nbsp; 
+
+<img src="misperceptions.png" height="500" />
 
 False Polarization
 ========================================================
-<img src="republicans.png" height="600" />
+&nbsp; 
+
+<img src="democrats.png" height="500" />
+
+False Polarization
+========================================================
+&nbsp; 
+
+<img src="republicans.png" height="500" />
+
+========================================================
+&nbsp; 
+
+<img src="atlantic.png" height="300" />
+
 
 False Polarization & Social Media
 ========================================================
-<img src="social_media.png" height="600" />
+&nbsp; 
+
+<img src="social_media.png" height="500" />
+
+
+An Experiment To Reveal False Polarization on Social Media
+========================================================
+
+<img src="study.png" height="600" />
+
 
 Class Exercise (Small Groups)
 ========================================================
-<img src="bot_intervention.tiff" height="600" />
+&nbsp; 
 
+- 1) You are members of a new ethics review team at Twitter.
 
-Class Exercise (Small Groups)
-========================================================
-<img src="bot_intervention.tiff" height="600" />
+- 2) Use the concenpts discussed in *Bit by Bit* to analyze whether this study should be done:  (`Respect for Persons`, `Beneficience`, `Justice`, and `Respect for Law and Public Interest`).
+
+- 3) Discuss whether there are any ways to evaluate possible risks of the study.
+
+- 4) Discuss whether there are any ways to make the study more ethical.
+
+- 5) Write a 1-2 paragraph recommendation that explains whether you think the data scientist at Twitter should be allowed to do this study.
+
