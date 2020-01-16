@@ -177,6 +177,9 @@ Strengths and Weaknesses of Text as Data
 ***Suggested reading***:  
 - Robinson Meyer. [Everything We Know About Facebook's Secret Mood Manipulation Experiment](https://www.theatlantic.com/technology/archive/2014/06/everything-we-know-about-facebooks-secret-mood-manipulation-experiment/373648/), *the Atlantic*.
 
+***Materials:***  
+[Slides, ](https://cbail.github.io/ids704/ethics/ethics.html/)
+
 
 ### **[Assignment: Lab 1](https://cbail.github.io/ids704/labs/lab1/lab1.html)**
 *- Due: January 28*
