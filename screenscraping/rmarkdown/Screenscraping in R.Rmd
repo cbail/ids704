@@ -172,7 +172,7 @@ Unfortunately, installing RSelenium can be a bit involved since it requires more
 
 ```{r, eval=FALSE}
 #now we install selenium from Docker
-system('docker run -d -p 4445:4444 selenium/standalone-chrome')
+system('docker run -d -p 4445:4444 selenium/standalone-firefox:2.53.0')
 ```
 
 Next, you will need to install `RSelenium` which is finally again hosted on CRAN. (For a couple of months earlier this year that was not the case, but you were able to use a workaround to install it from Github using the `devtools` package.) After downloading and loading the package, we start the Selenium server and open Chrome with the following commands (Note: If you don't have Chrome installed, you can start Firefox instead using the following command `rD <- rsDriver(browser = "firefox")`:
@@ -182,9 +182,12 @@ install.packages("RSelenium")
 library(RSelenium)
 
 # start a Selenium server
-rD <- rsDriver()
+remDr <- remoteDriver(
+  remoteServerAddr = "192.168.99.100",
+  port = 4445L
+)
 # open the browser
-remDr <- rD$client
+remDr$open()
 
 
 ```
