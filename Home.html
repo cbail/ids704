@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -1342,6 +1342,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1403,7 +1404,6 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1416,9 +1416,48 @@ summary {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -1432,12 +1471,6 @@ summary {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -1634,8 +1667,8 @@ None</p>
 - Salganik, Matthew, <em>Bit by Bit</em>, <a href="https://www.bitbybitbook.com/en/1st-ed/introduction/">Introduction</a> &amp; <a href="https://www.bitbybitbook.com/en/1st-ed/observing-behavior/">Observing Behavior</a></p>
 <p><strong><em>Suggested reading</em></strong>:<br />
 - David Donoho. <a href="https://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf">50 Years of Data Science</a><br />
-- Lazer et al. <a href="https://science.sciencemag.org/content/323/5915/721">Computational Social Science</a>, <em>Science</em>.<br />
-- Lazer et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2745217/">Life in the network: the coming age of computational social science</a>, <em>Science</em>.<br />
+- Lazer et al. <a href="https://science.sciencemag.org/content/323/5915/721">Computational Social Science</a>, <em>Science</em>.<br />
+- Lazer et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2745217/">Life in the network: the coming age of computational social science</a>, <em>Science</em>.<br />
 - Watts, Duncan. <a href="https://www.nature.com/articles/s41562-016-0015">Should social science be more solution-oriented?</a>, <em>Nature</em> <br></p>
 </div>
 <div id="january-14-introduction-to-text-as-data" class="section level4">
@@ -1648,7 +1681,7 @@ Strengths and Weaknesses of Text as Data</p>
 - Salganik, Matthew, <em>Bit by Bit</em>, <a href="https://www.bitbybitbook.com/en/1st-ed/asking-questions/">Asking Questions</a>.<br />
 - Mullainathan, Sendhil. <a href="https://www.nytimes.com/2019/12/06/business/algorithm-bias-fix.html">Biased Algorithms Are Easier to Fix Than Biased People</a>, <em>New York Times</em></p>
 <p><strong><em>Suggested reading</em></strong>:<br />
-- Blumenstock et al. <a href="https://science.sciencemag.org/content/350/6264/1073">Predicting Poverty and Wealth from Mobile Phone Data</a>, <em>Science</em>. <br></p>
+- Blumenstock et al. <a href="https://science.sciencemag.org/content/350/6264/1073">Predicting Poverty and Wealth from Mobile Phone Data</a>, <em>Science</em>. <br></p>
 </div>
 <div id="january-16-ethics-in-text-as-data" class="section level4">
 <h4><strong>January 16: Ethics in Text as Data</strong></h4>
@@ -1706,7 +1739,7 @@ Reading and parsing HTML</p>
 <p><strong><em>Topics:</em></strong><br />
 GREP, Tokenization, Stemming</p>
 <p><strong><em>Materials:</em></strong><br />
-<a href="https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/">Slides,</a> <a href="https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html">Annotated Code</a></p>
+<a href="https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic_Text_Analysis.html#/">Slides,</a> <a href="https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html">Annotated Code</a></p>
 <p><strong><em>Required reading</em></strong>:<br />
 - James Evans &amp; Pedro Aceves. <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-081715-074206">Machine Translation: Mining Text for Social Theory</a>. Annual Review of Sociology.</p>
 <p><strong><em>Suggested reading</em></strong>:<br />
@@ -1722,7 +1755,7 @@ GREP, Tokenization, Stemming</p>
 <p><strong><em>Topics:</em></strong><br />
 Text pre-processing, n-grams</p>
 <p><strong><em>Materials:</em></strong><br />
-<a href="https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/">Slides,</a> <a href="https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html">Annotated Code</a></p>
+<a href="https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic_Text_Analysis.html#/">Slides,</a> <a href="https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html">Annotated Code</a></p>
 </div>
 </div>
 <div id="mid-term-exam-review" class="section level3">
@@ -1864,49 +1897,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
