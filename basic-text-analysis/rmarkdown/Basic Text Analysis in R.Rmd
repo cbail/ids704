@@ -94,7 +94,11 @@ Another important concept that is necessary to master to perform quantitative te
 ![](token.png)
 <br>
 
-This figure illustrates the most common way of tokenizing a text---by individual word. Many techniques in quantitative text analysis also analyze what are known as "n-grams" however. Ngrams are simply sequences of words with length "n." For example, the sentence above could be written in ngram form as "the quick brown","quick brown fox", "brown fox jumps" and so on. N-grams can be useful when word-order is important, as I will discuss in additional detail below. For now, let me give you a simple example: "I hate the president" and "I'd hate to be the president."
+This figure illustrates the most common way of tokenizing a text---by individual word. 
+
+# N-grams
+
+Many techniques in quantitative text analysis also analyze what are known as "n-grams" however. Ngrams are simply sequences of words with length "n." For example, the sentence above could be written in ngram form as "the quick brown","quick brown fox", "brown fox jumps" and so on. N-grams can be useful when word-order is important, as I will discuss in additional detail below. For now, let me give you a simple example: "I hate the president" and "I'd hate to be the president."
 
 # Creating a Corpus
 
@@ -102,8 +106,12 @@ Another unique feature of quantitative text analysis is that it typically requir
 
 In R, the `tm` package is often used to create a corpus object. This package can be used to read in data in many different formats-- including text within data frames, .txt files, or .doc files. Let's begin with an example of how to read in text from within a data frame. We begin by loading an .Rdata file that contains 3,196 recent tweets by President Trump that are hosted on my Github page:
 
-```{r}
+```{r, eval=FALSE}
 load(url("https://cbail.github.io/Trump_Tweets.Rdata"))
+head(trumptweets$text)
+```
+```{r, echo=FALSE}
+load("~/ids704/basic-text-analysis/Rpres/trumptweets.Rdata")
 head(trumptweets$text)
 ```
 
@@ -162,7 +170,7 @@ Before we begin running quantitative analyses of text, we first need to decide p
 
 Common words such as "the","and","bot","for","is" etc. are often described as "stop words," meaning that they should not be included in a quantitative text analysis. Removing stop words is fairly easy regardless of whether you are working with a Corpus object or a tidytext object assuming you are working with a widely used language such as English. Let's begin with the former, using the `tm_map` function as follows:
 
-```{r}
+```{r warning=FALSE}
 trump_corpus <- tm_map(trump_corpus, removeWords, stopwords("english"))
 ```
 
@@ -226,7 +234,7 @@ trump_corpus <- tm_map(trump_corpus,  content_transformer(tolower))
 
 Once again `tidytext` automatically makes all words lower case.
 
-**Removing whitespaces**  
+**Removing Whitespaces**  
 
 Often, a single white space or group of whitespaces can also be considered to be a "word" within a corpus. To prevent this, do the following with a `Corpus` object:
 
@@ -254,8 +262,8 @@ And here is some code to stem `tidytext` data-- we are also going to employ the 
 
 ```{r, eval=FALSE}
 library(SnowballC)
-  tidy_trump_tweets<-tidy_trump_tweets %>%
-      mutate_at("word", funs(wordStem((.), language="en")))
+tidy_trump_tweets<-tidy_trump_tweets %>%
+  mutate_at("word", funs(wordStem((.), language="en")))
 ```
 
 # The Document-Term Matrix
@@ -280,13 +288,14 @@ inspect(trump_DTM[1:5,3:8])
 To create a DTM in `tidytext` we can use the following code:
 
 ```{r}
-
 tidy_trump_DTM<-
   tidy_trump_tweets %>%
   count(created_at, word) %>%
   cast_dtm(created_at, word, n)
 ```
 
-**Now YOU try it!!!**
+And we can similarly inspect it as follows:
 
-Now that we have mastered some basic concepts in text analysis, try a) creating a corpus or tidytext dataset; b) counting the five top words that appear in that dataset after removing stop words; and c) create a Document-Term Matrix.
+```{r}
+inspect(tidy_trump_DTM[1:5,3:8])
+```

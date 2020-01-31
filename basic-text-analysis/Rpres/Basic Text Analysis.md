@@ -20,6 +20,7 @@
 </style>
 
 
+
 Basic Text Analysis
 ========================================================
 author: Chris Bail 
@@ -260,22 +261,11 @@ tidy_trump_tweets %>%
  8 in     1213
  9 is     1045
 10 for     886
-# ... with 8,680 more rows
+# … with 8,680 more rows
 ```
 
 Corpus vs. TidyText
 ========================================================
-
-
-========================================================
-
-# **Now YOU Try it!!!**
-
-1) Pick one of the text based datasets we worked with in the last class;
-
-2) Clean the text (remove any unwanted characters);  
-
-3) Create a corpus or Tidytext dataframe
 
 ========================================================
 
@@ -332,7 +322,7 @@ tidy_trump_tweets %>%
  8 fake        234
  9 trump       218
 10 country     213
-# ... with 8,111 more rows
+# … with 8,111 more rows
 ```
 
 Remove Punctuation
@@ -483,5 +473,4 @@ tidy_trump_DTM<-
 3) Count the top five words in the dataset after removing stop words;
 
 4) Create a Document-Term Matrix
-
 
