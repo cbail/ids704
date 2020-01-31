@@ -12,7 +12,7 @@ output:
 
 This lab is meant to work through your understanding of Screen (web) scraping. For it we will be using the Rvest package and Selenium R. This lab is not meant to trick you in anyway, however if you run into issues or errors, please reach out to your TAs [Kate](kathryn.coulter@duke.edu) and [Joe](joseph.littell@duke.edu) through email or slack. 
 
-This lab will have 4 questions that will count for 2 points each for the first and third questions and 3 points for each of the other two questions. In order to recieve full credit you must turn in a PDF of your .RMD file individually by the due date with all your code and cells run. You may work with others but each student is expected to turn in their own PDF. This process will be consistent throughout your labs, however there is one unique caveat with Lab 01. Since you must create a token you are asked to do so in two steps. 
+*Although this lab has 4 listed questions, as stated in class question 2 and 4 are optional and will not count for points.* Question 1 will instead count as 5 points and question 3 will count as the other 5 points. In order to recieve full credit you must turn in a PDF or HTML of your .RMD file individually by the due date with all your code and cells run. You may work with others but each student is expected to turn in their own PDF. This process will be consistent throughout your labs, however there is one unique caveat with Lab 01.
 
 **Resources**
 
