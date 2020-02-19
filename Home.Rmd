@@ -227,7 +227,7 @@ Reading and parsing HTML
 GREP, Tokenization, Stemming
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic_Text_Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 ***Required reading***:  
 - James Evans & Pedro Aceves. [Machine Translation: Mining Text for Social Theory](https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-081715-074206). Annual Review of Sociology.  
@@ -244,7 +244,7 @@ GREP, Tokenization, Stemming
 Text pre-processing, n-grams
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic_Text_Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 
 ### **Mid-Term Exam & Review**

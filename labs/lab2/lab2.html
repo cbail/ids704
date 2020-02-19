@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -268,6 +268,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -329,7 +330,6 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -341,6 +341,18 @@ summary {
   display: none;
 }
 </style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
 
 <!-- code folding -->
 
@@ -370,15 +382,15 @@ summary {
 <h3>Due: February 4</h3>
 <p><strong>Introduction</strong></p>
 <p>This lab is meant to work through your understanding of Screen (web) scraping. For it we will be using the Rvest package and Selenium R. This lab is not meant to trick you in anyway, however if you run into issues or errors, please reach out to your TAs <a href="kathryn.coulter@duke.edu">Kate</a> and <a href="joseph.littell@duke.edu">Joe</a> through email or slack.</p>
-<p>This lab will have 4 questions that will count for 2 points each for the first and third questions and 3 points for each of the other two questions. In order to recieve full credit you must turn in a PDF of your .RMD file individually by the due date with all your code and cells run. You may work with others but each student is expected to turn in their own PDF. This process will be consistent throughout your labs, however there is one unique caveat with Lab 01. Since you must create a token you are asked to do so in two steps.</p>
+<p><strong>Although this lab has 4 listed questions, as stated in class question 2 and 4 are optional and will not count for points.</strong> Question 1 will instead count as 5 points and question 3 will count as the other 5 points. In order to recieve full credit you must turn in a PDF or HTML of your .RMD file individually by the due date with all your code and cells run. You may work with others but each student is expected to turn in their own PDF. This process will be consistent throughout your labs, however there is one unique caveat with Lab 01.</p>
 <p><strong>Resources</strong></p>
 <p>Before asking any basic questions, please review the following resources;</p>
 <p><a href="https://compsocialscience.github.io/summer-institute/2018/materials/day2-digital-trace-data/screenscraping/Rpres/SICSS_Screenscraping.html#/">Slides</a> <br> <a href="https://cbail.github.io/ids704/screenscraping/rmarkdown/Screenscraping_in_R.html">Annotated Code</a><br> <a href="https://cran.r-project.org/web/packages/rvest/rvest.pdf">RVest Documentation</a><br> <a href="https://www.rdocumentation.org/packages/RSelenium/versions/1.7.5">RSelenium Documentation</a></p>
 <p><strong>Questions</strong></p>
 <p><em>Question 1:</em> Navigate to the wikipedia page on <a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_films">highest grossing films</a>. One there, utlize the inspect function of your web browswer in conjuection with RVest to copy the table of highest grossing films. Print out the head() of this table</p>
-<p><em>Question 2:</em> Repeat the process in Question 1 using RSelenium instead of RVest.</p>
+<p><em>Question 2:</em> OPTIONAL: Repeat the process in Question 1 using RSelenium instead of RVest.</p>
 <p><em>Question 3:</em> Unfortunately data we want isn’t always as nicely structured as a wikipedia table. Navigate to a this blog post about <a href="https://blog.hubspot.com/sales/famous-movie-quotes">famous movie quotes</a>. Using the Selector Gadget for you browser, pull the first 10 quotes from the list, print the results.</p>
-<p><em>Question 4:</em> Repeat the process Question 3 Usining RSelenium instead of RVest.</p>
+<p><em>Question 4:</em> OPTIONAL: Repeat the process Question 3 Usining RSelenium instead of RVest.</p>
 </div>
 
 
@@ -398,23 +410,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
