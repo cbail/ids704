@@ -6,11 +6,11 @@ output:
   
 ---
 
-### Due: February 27
+### Due: Friday, February 28
 
 **Introduction**
 
-This lab corresponds with the course material covering dictionary-based analysis, covered in class Thursday, February 20. Submit your completed assignment as a knit R Markdown PDF or HTML file to Dropbox (or printed PDF of a Jupyter Notebook) by the end of day Thursday, February 27.
+This lab corresponds with the course material covering dictionary-based analysis, covered in class Thursday, February 20. Submit your completed assignment as a knit R Markdown PDF or HTML file to Dropbox (or printed PDF of a Jupyter Notebook) by the end of day Friday, February 28.
 
 **Resources**
 

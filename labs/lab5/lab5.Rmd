@@ -6,9 +6,9 @@ output:
   
 ---
 
-### Due: March 3
+### Due: Friday, March 6
 
-This lab corresponds with the course material covering topic modeling Submit your completed assignment as an R Markdown file to Dropbox by the start of class on March 3.
+This lab corresponds with the course material covering topic modeling Submit your completed assignment as an R Markdown file to Dropbox by the end of day Friday, March 6.
 
 1.
 

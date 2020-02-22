@@ -255,7 +255,7 @@ Text pre-processing, n-grams
 
 
 ### **[Assignment: Lab 4](https://cbail.github.io/ids704/labs/lab4/lab4.html)**
-*- Due: February 27* 
+*- Due: February 28* 
 
 #### **February 20: Dictionary-Based Analysis**
 ***Materials:***  
@@ -266,7 +266,7 @@ Text pre-processing, n-grams
 
 
 ### **[Assignment: Lab 5](https://cbail.github.io/ids704/labs/lab5/lab5.html)**
-*- Due: March 3* 
+*- Due: March 6* 
 
 #### **February 25: Topic Modeling, Part 1**
 ***Materials:***  
