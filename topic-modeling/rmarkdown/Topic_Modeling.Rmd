@@ -59,8 +59,10 @@ data("AssociatedPress")
 
 The workhorse function within the `topicmodels` package is `LDA`, which performs Latent Dirichlet Allocation. As I described above, the user must specify a value of *k*, or the number of topics in the corpus, in order to run a topic model. For a dataset as diverse as the Associated Press articles described above, it is very difficult to make an educated guess about the number of topics we might discover, so to get us starded, let's pick a random number: 30.
 
-
-```{r}
+```{r, include=FALSE}
+load(AP_topic_model)
+```
+```{r,eval=FALSE}
 AP_topic_model<-LDA(AssociatedPress, k=10, control = list(seed = 321))
 ```
 
