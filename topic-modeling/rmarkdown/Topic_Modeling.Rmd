@@ -94,15 +94,6 @@ ap_top_terms %>%
 
 Let's take a moment to review the results. There is some evidence that the words associated with some of the topics cohere into something that could be called a latent theme or topic within the text. For example, topic #1 includes words that are often used to discuss economics and markets and topic #9 appears to describe legal issues. But there are many other topics that don't make much sense. Consider, for example, topic #8, which includes the terms "worker,"two","new","water", and "area" among others.
 
-**Now YOU try it**
-
-1) Pick any of the datasets we've collected thus far (or one of the ones listed on the list of crowd-sourced datasets in the first lecture: http://bit.ly/1JA1CF3);
-
-2) Prepare the data so that it can be analyzed in the `topicmodels` package
-
-3) Run three models and try to identify an appropriate value for `k` (the number of topics)
-
-
 **Reading Tea Leaves**
 
 As is perhaps clear, this type of post-hoc interpretation of topic models is rather dangerous. As Jonathan Chang has written, it can quickly come to resemble the process of "reading tea leaves," or finding meaning in patterns that are in fact quite arbitrary or even random. One of the most consequential decisions in the process of topic modeling, as I mentioned above, is specifying the number of topics (*k*) in the corpus. Above, we used a purely arbitrary number of topics. Though in some cases researchers may have reasonable guesses about the expected number of topics, in many cases they will not. We will review some techniques for taking a good guess of the value of *k* when the research does not have strong a priori about the number of topics, but all of these techniques are imperfect. Indeed, I once heard David Mimno, who was one of the pioneers in topic modeling, describe the method as a "tool for reading." By this he meant that topic modeling does not reveal the "true" meaning of documents within a corpus, but is instead a powerful tool for identifying general trends in a corpus that can then be analyzed in a more granular manner using other techniques. Despite this rather humble assessment of the promise of topic models, many people continue to employ them as if they do in fact reveal the true meaning of texts, which I fear may create a surge in "false positive" findings in studies that employ topic models.
