@@ -268,24 +268,37 @@ Text pre-processing, n-grams
 ### **[Assignment: Lab 5](https://cbail.github.io/ids704/labs/lab5/lab5.html)**
 *- Due: March 6* 
 
-#### **February 25: Topic Modeling, Part 1**
+#### **February 25: Topic Modeling**
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
 
 ***Required reading***:  
 - Blei, David M. 2012. Probabilistic Topic Models. Communications of the ACM (Note: this is a challenging article, so don’t worry if you are not able to understand every last part).
 
-#### **February 27: Topic Modeling, Part 2**
+#### **February 27: Structural Topic Models**
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
 
-#### **March 3: Structural Topic Models**
-***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
-
-#### **March 5: Social Network Analysis**
+#### **March 3: Social Network Analysis, Part I**
 ***Topics:***  
 An Introduction to Social Network Analysis
+
+***Materials:***  
+[Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit)
+
+***Required reading***:  
+- Nicholas Cristakis & James Fowler. [Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives], Chapter One.
+
+***Additional reading***:  
+- Duncan Watts. 1999. [**Small Worlds**], Chapter 1. Princeton University Press: 3-8.  
+- Kieran Healy. (2013). [Using Metadata to Find Paul Revere](https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/), Blog post.  
+- David Austin. (2006). [How Google Finds Your Needle in the Web's Haystack](http://www.ams.org/publicoutreach/feature-column/fcarc-pagerank), 
+American Mathematical Society Feature Column.
+
+
+
+#### **March 5: Social Network Analysis, Part II**
+***Topics:***  
 
 ***Materials:***  
 [Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit)
