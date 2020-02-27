@@ -270,14 +270,14 @@ Text pre-processing, n-grams
 
 #### **February 25: Topic Modeling**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://compsocialscience.github.io/summer-institute/2019/materials/day3-text-analysis/topic-modeling/rmarkdown/Topic_Modeling.html)
 
 ***Required reading***:  
 - Blei, David M. 2012. Probabilistic Topic Models. Communications of the ACM (Note: this is a challenging article, so don’t worry if you are not able to understand every last part).
 
 #### **February 27: Structural Topic Models**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://compsocialscience.github.io/summer-institute/2019/materials/day3-text-analysis/topic-modeling/rmarkdown/Topic_Modeling.html)
 
 #### **March 3: Social Network Analysis, Part I**
 ***Topics:***  
