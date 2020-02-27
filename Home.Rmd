@@ -277,7 +277,7 @@ Text pre-processing, n-grams
 
 #### **February 27: Structural Topic Models**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://compsocialscience.github.io/summer-institute/2019/materials/day3-text-analysis/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code, ](https://compsocialscience.github.io/summer-institute/2019/materials/day3-text-analysis/topic-modeling/rmarkdown/Topic_Modeling.html) [Running R on AWS](https://cbail.github.io/Running_R_in_the%20Cloud.html#/)
 
 #### **March 3: Social Network Analysis, Part I**
 ***Topics:***  
