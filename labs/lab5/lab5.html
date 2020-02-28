@@ -368,17 +368,18 @@ summary {
 
 <div id="due-friday-march-6" class="section level3">
 <h3>Due: Friday, March 6</h3>
-<p>This lab corresponds with the course material covering topic modeling Submit your completed assignment as an R Markdown file to Dropbox by the end of day Friday, March 6.</p>
+<p><strong>Introduction</strong></p>
+<p>This lab corresponds with the course material pertaining to topic modeling, covered in class Tuesday, February 25 and Thursday, February 27. Submit your completed assignment as a knit R Markdown PDF or HTML file to Dropbox (or printed PDF of a Jupyter Notebook) by the end of day Friday, March 6.</p>
+<p><strong>Resources</strong></p>
+<p>The data you will use for this lab is taken from a Kaggle Dataset created by RakanNimer provided at <a href="https://www.kaggle.com/rakannimer/billboard-lyrics" class="uri">https://www.kaggle.com/rakannimer/billboard-lyrics</a> which contains the lyrics for all Billboard Year-End Hot 100 (1965-2015) songs. Click the “Download” link which should download a csv file “billboard_lyrics_1964-2015.csv” that we will use as the dataset for this lab.</p>
+<p><strong>Lab</strong></p>
 <ol style="list-style-type: decimal">
-<li><strong>Now YOU try it</strong></li>
-</ol>
-<ol style="list-style-type: decimal">
-<li><p>Pick any of the datasets we’ve collected thus far (or one of the ones listed on the list of crowd-sourced datasets in the first lecture: <a href="http://bit.ly/1JA1CF3" class="uri">http://bit.ly/1JA1CF3</a>);</p></li>
-<li><p>Prepare the data so that it can be analyzed in the <code>topicmodels</code> package</p></li>
-<li><p>Run three models and try to identify an appropriate value for <code>k</code> (the number of topics)</p></li>
-</ol>
-<ol start="2" style="list-style-type: decimal">
-<li></li>
+<li><p>(1 point) Using the link above and the downloaded file, load the lyrics dataset into your workspace.</p></li>
+<li><p>(1 point) Subset the data into “decades of lyrics” so that each new dataframe contains the lyrics and other columns from a particular decade of music. Use the following decades so that each has a dataset of song lyrics: 1965-1974, 1975-1984, 1985-1994, 1995-2004, 2005-2014.</p></li>
+<li><p>(2 points) Prepare each of the datasets so that it can be analyzed using the <code>topicmodels</code> package.</p></li>
+<li><p>(3 points) Choose a single dataset and run three models to try and identify an appropriate value for <code>k</code> (the number of topics). State which value of <code>k</code> you choose after running these three models as well as why you picked those particular three values of <code>k</code> to run for each of your models.</p></li>
+<li><p>(2 points) Using the same value of <code>k</code>, run a model on each of the other decades lyrics datasets.</p></li>
+<li><p>(1 point) Based on your output, does it seem like your value of <code>k</code> was a good choice for all decades of lyrics?</p></li>
 </ol>
 </div>
 
