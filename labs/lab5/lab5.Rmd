@@ -8,9 +8,28 @@ output:
 
 ### Due: Friday, March 6
 
-This lab corresponds with the course material covering topic modeling Submit your completed assignment as an R Markdown file to Dropbox by the end of day Friday, March 6.
+**Introduction**
 
-1.
+This lab corresponds with the course material pertaining to topic modeling, covered in class Tuesday, February 25 and Thursday, February 27. Submit your completed assignment as a knit R Markdown PDF or HTML file to Dropbox (or printed PDF of a Jupyter Notebook) by the end of day Friday, March 6.
+
+
+**Resources**
+
+The data you will use for this lab is taken from a Kaggle Dataset created by RakanNimer provided at https://www.kaggle.com/rakannimer/billboard-lyrics which contains the lyrics for all Billboard Year-End Hot 100 (1965-2015) songs. Click the "Download" link which should download a csv file "billboard_lyrics_1964-2015.csv" that we will use as the dataset for this lab.
+
+**Lab**
+
+1. (1 point) Using the link above and the downloaded file, load the lyrics dataset into your workspace. 
+
+```{r}
+df <- read.csv("billboard_lyrics_1964-2015.csv")
+dim(df)
+```
+
+We will need the columns containing which product the review is for as well as the review text, indicate which columns they are and create a new cleaned dataframe with only these two columns. Print the first few rows of data.
+
+
+
 **Now YOU try it**
 
 1) Pick any of the datasets we've collected thus far (or one of the ones listed on the list of crowd-sourced datasets in the first lecture: http://bit.ly/1JA1CF3);
