@@ -284,7 +284,7 @@ Text pre-processing, n-grams
 An Introduction to Social Network Analysis
 
 ***Materials:***  
-[Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit)
+[Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit) [Annotated Code, ](https://cbail.github.io/ids704/social-networks/Intro_to_Network_Analysis_in_R.html)
 
 ***Required reading***:  
 - Nicholas Cristakis & James Fowler. [Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives], Chapter One.
