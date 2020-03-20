@@ -23,6 +23,24 @@ output:
 **Dropbox (to submit Labs):** https://sakai.duke.edu/portal/directtool/4049fefe-3ba1-43e8-9cba-a92758c96655/  
 
 
+
+## COVID-19 ANNOUNCEMENT
+
+The worldwide spread of COVID-19 has impacted all of us. Many of us are dealing with unprecedented challenges that have stretched us to our limits. I am working hard to adapt our class to these challenging circumstances but will need to ask for your patience as I continue to assess how to best serve everyone's needs in a rapidly changing environment. Below is my first effort to outline a path forward for us, but I am very open to feedback from you and may make additional changes in accordance with your needs or requests.
+
+***Remote Learning***
+
+Thank you all for completing the anonymous survey I distributed about your current situation. This has been enormously helpful as I try to chart the best path forward for our class. Unfortunately, this survey revealed that some people in our class do not have regular access to high quality internet right now, which means at least some people will not be able to participate in classes in real time. To accommodate these people, I am going to teach using YouTube live, which not only streams live video content but also immediately archives live streams. A major downside of YouTube live is that it does not allow you to talk to me. To facilitate live interaction and to allow you to participate in the class, I have decided that the best option is for us to all log onto slack during the class. This way, you may ask me questions and interact with each other in our #general channel. We will hold class at our regularly scheduled times. For those of you who are not able to join live, I will be very happy to answer any questions you have by slack at a later point in time.  
+
+***Course Requirements***
+
+As you may have heard by now, Duke University has decided to make all classes graded as "Satisfactory" or "Unsatisfactory" unless you request a letter grade. You will receive a "Satisfactory" grade as long as you achieve more than a 70 (or C-) in our class. In general, I hope this decision will give you the flexibility you need to achieve at a high level in our class. Our move to remote learning does pose significant challenges to the main course requirement in our class: our group projects. When we meet on Tuesday, I am going to discuss a path forward for this course requirement, which will likely involve reassessing what is possible via remoate interaction. I am also hoping that we can try to find some positive energy, however, and perhaps do some work together that might help societal response to COVID-19. For now, we will proceed with our original grading plan for the group project (see grade calculations below). We will also continue with weekly labs, but I am going to make these optional for the rest of the semester. If you do not complete any additional labs, your grade for the semester will be the average grade you have received on the labs before spring break.
+
+***Other Forms of Support***
+
+If you require support- whether it is health care, mental health care, or financial support- Duke has created a single website where updates are being posted about the university's response and other resources that are available to you as a member of the Duke community, I urge you to visit https://coronavirus.duke.edu/ regularly to take advantage of the information posted there each day.
+
+
 ## Course Description
 
 Welcome to "Data Scraping and Text Analysis" (IDS 703), one of the core courses in [Duke University's Masters Program in Interdisciplinary Data Science (MIDS)](https://datascience.duke.edu/). The past decade has witnessed an explosion of data produced by websites such as Twitter, Facebook, Google, and Wikipedia, but also the mass digitization of historical archives and administrative records. Though these new data sources hold enormous potential to address a range of pressing problems within industry and academia, collecting and analyzing text-based data presents unique challenges. Fortunately, the widespread availability of text-based data coincides with major advances in the fields of computer science and natural language processing. This course will provide students with an overview of popular techniques for collecting, processing, and analyzing text-based data—including screen-scraping, mining data from application programming interfaces or APIs, topic modeling, text networks, and advanced text classifiers. We will also discuss the challenge of conducting empirical research with these data, including ethics, causal inference, and the external validity of digital sources.
