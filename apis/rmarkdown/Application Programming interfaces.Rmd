@@ -55,10 +55,6 @@ If you have a Facebook account---and if you were logged in---Facebook will gener
 
 Credentials may not only determine your access to people with whom you are connected on a social network, but also other privileges you may have vis-a-vis an API. For example, many APIs charge money for access to their data or services, and thus you will only receive your credentials after setting up an account. As we will see below, some sites also require you to have multiple types of credentials which can be described using a variety of verbiage such as "tokens","keys", or "secrets."
 
-**Now YOU try it!!!**
-
-The Graph API explorer allows you to search for different fields. Take a moment and try to see whether you can make a call for other types of information about yourself. To do this, you'll have to request different levels of "permission" using the dropdown menu on the right hand side of the explorer tool page. You can populate the syntax for different fields using the "search for a field" box on the upper right hand side of the page. Don't worry if you can't get the query language right for now---specifying the syntax of an API call requires mastering each API's documentation, which can take a very long time. This tool tries to help you, but it does not work perfectly and constructing the right call may require spending quite a bit of time reading through the API documentation. More importantly-- as you will soon see-- there are a number of R packages that contain functions that make API calls for you that will save you the time and energy necessary to learn the syntax specific to each API.
-
 
 # Rate Limiting
 
@@ -92,7 +88,7 @@ Once you accept the terms, your app developer request will go under review by Tw
 ![](waiting.png)
 
 Once your developer account is approved, you can log in once again and click the "Create New App" button at the top right of the screen. Our goal is not to create a fully fledged app at this point, but simply to obtain the credentials necessary to begin making some simple calls to the Twitter API.
-You can name your app whatever you want, describe it however you want, and put in the name of any website you like. The two important things you must do are 1) put the following text in the "Callback URL" text box: `http://127.0.0.1:1410` This number describes the location where the API will return your data-- in this case, it is your web browser (but it could be another site where you want to store the results of the data.); 2) You must uncheck the "Enable Callback Locking" button on the same page. Note: at the time of this writing, Twitter is discussing removing this check box, so you may need to search the documentation of the `rtweet` package on Github or elsewhere for more information if the authentication functions below do not work.
+You can name your app whatever you want, describe it however you want, and put in the name of any website you like. The two important things you must do are 1) put the following text in the "Callback URL" text box: `http://127.0.0.1:1410` This number describes the location where the API will return your data-- in this case, it is your web browser (but it could be another site where you want to store the results of the data.).
 
 If you followed the steps above, the name of your application should now appear. Click on it, and then click on the "Keys and Access Tokens" tab in order to get your credentials. Unfortunately, Twitter makes developers get two different types of credentials which are listed on that page. These are blurred out in the screenshot below because I do not want people who read this web page to have access to my credneitals, which they could then abuse in various ways: 
 
@@ -103,11 +99,11 @@ If you followed the steps above, the name of your application should now appear.
 The next step is to define your credentials as string variables in R, which we will then use to authenticate ourselves with the Twitter API. Make sure to select the entire string (by triple clicking),  and make sure that you do not accidentally leave out the first or last digit (or add spaces):
 
 ```{r, eval=FALSE}
-app_name<-"YOURAPPNAMEHERE"
-consumer_key<-"YOURKEYHERE"
-consumer_secret<-"YOURSECRETHERE"
-access_token<-"YOURACCESSTOKENHERE"
-access_token_secret<-"YOURACCESSTOKENSECRETHERE"
+app_name            = "YOURAPPNAMEHERE"
+consumer_key        = "YOURKEYHERE"
+consumer_secret     = "YOURSECRETHERE"
+access_token        = "YOURACCESSTOKENHERE"
+access_token_secret = "YOURACCESSTOKENSECRETHERE"
 ```
 
 
@@ -122,7 +118,15 @@ Now, we are ready to authenticate ourselves vis-a-vis Twitter's API. To do this,
 
 ```{r, eval=FALSE}
 library(rtweet)
-create_token(app=app_name, consumer_key=consumer_key, consumer_secret=consumer_secret)
+
+twitter_token = create_token(
+  app             = app_name,
+  consumer_key    = consumer_key,
+  consumer_secret = consumer_secret,
+  access_token    = access_token,
+  access_secret   = access_secret,
+  set_renv        = TRUE
+)
 ```
 
 Now, we can take full advantage of all of the many useful functions within the `rtweet` function for collecting data from Twitter. Let's begin by extracting 3,000 tweets that use the hashtag #korea.
@@ -262,10 +266,6 @@ post_tweet("I love APIs")
 ```
 
 I have used this function in past work with bots. See for example, [this paper](https://osf.io/preprints/socarxiv/4ygux).
-
-**Now YOU Try it!!!**
-
-To reinforce the skills you've learned in this section, try the following: 1) Collect the most recent 100 tweets from CNN; 2) determine how many people follow CNN on twitter; and, 3) determine if CNN is currently tweeting about any subjects that are trending in your area.
 
 **Wrapping API calls within a Loop**
 

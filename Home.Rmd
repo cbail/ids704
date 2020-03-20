@@ -18,9 +18,27 @@ output:
 **Office Hours:** Tuesdays, 12 - 1:15 pm, Soc/Psych 254  
 **Website:** https://www.chrisbail.net  
 **Github:** https://github.com/cbail  
-**Teaching Assistants:** [Kate Coulter](kathryn.coulter@duke.edu) / Tuesdays, 3 - 4 pm, Gross 230D & <br> [Joe Littell](joseph.littell@duke.edu) /  Thursdays, 9 - 10 am, Gross 230K  
+**Teaching Assistants:** [Kate Coulter](kathryn.coulter@duke.edu) / By Appointment & <br> [Joe Littell](joseph.littell@duke.edu) /  Thursdays, 9 - 10 am, Gross 230K  
 **Slack Channel:** https://dukemids.slack.com/archives/CRSPSGFHR  
 **Dropbox (to submit Labs):** https://sakai.duke.edu/portal/directtool/4049fefe-3ba1-43e8-9cba-a92758c96655/  
+
+
+
+## COVID-19 ANNOUNCEMENT
+
+The worldwide spread of COVID-19 has impacted all of us. Many of us are dealing with unprecedented challenges that have stretched us to our limits. I am working hard to adapt our class to these challenging circumstances but will need to ask for your patience as I continue to assess how to best serve everyone's needs in a rapidly changing environment. Below is my first effort to outline a path forward for us, but I am very open to feedback from you and may make additional changes in accordance with your needs or requests.
+
+***Remote Learning***
+
+Thank you all for completing the anonymous survey I distributed about your current situation. This has been enormously helpful as I try to chart the best path forward for our class. Unfortunately, this survey revealed that some people in our class do not have regular access to high quality internet right now, which means at least some people will not be able to participate in classes in real time. To accommodate these people, I am going to teach using YouTube live, which not only streams live video content but also immediately archives live streams. A major downside of YouTube live is that it does not allow you to talk to me. To facilitate live interaction and to allow you to participate in the class, I have decided that the best option is for us to all log onto slack during the class. This way, you may ask me questions and interact with each other in our #general channel. We will hold class at our regularly scheduled times. For those of you who are not able to join live, I will be very happy to answer any questions you have by slack at a later point in time.  
+
+***Course Requirements***
+
+As you may have heard by now, Duke University has decided to make all classes graded as "Satisfactory" or "Unsatisfactory" unless you request a letter grade. You will receive a "Satisfactory" grade as long as you achieve more than a 70 (or C-) in our class. In general, I hope this decision will give you the flexibility you need to achieve at a high level in our class. Our move to remote learning does pose significant challenges to the main course requirement in our class: our group projects. When we meet on Tuesday, I am going to discuss a path forward for this course requirement, which will likely involve reassessing what is possible via remoate interaction. I am also hoping that we can try to find some positive energy, however, and perhaps do some work together that might help societal response to COVID-19. For now, we will proceed with our original grading plan for the group project (see grade calculations below). We will also continue with weekly labs, but I am going to make these optional for the rest of the semester. If you do not complete any additional labs, your grade for the semester will be the average grade you have received on the labs before spring break.
+
+***Other Forms of Support***
+
+If you require support- whether it is health care, mental health care, or financial support- Duke has created a single website where updates are being posted about the university's response and other resources that are available to you as a member of the Duke community, I urge you to visit https://coronavirus.duke.edu/ regularly to take advantage of the information posted there each day.
 
 
 ## Course Description
@@ -227,7 +245,7 @@ Reading and parsing HTML
 GREP, Tokenization, Stemming
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic_Text_Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 ***Required reading***:  
 - James Evans & Pedro Aceves. [Machine Translation: Mining Text for Social Theory](https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-081715-074206). Annual Review of Sociology.  
@@ -244,7 +262,7 @@ GREP, Tokenization, Stemming
 Text pre-processing, n-grams
 
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic%20Text%20Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
+[Slides, ](https://cbail.github.io/ids704/basic-text-analysis/Rpres/Basic_Text_Analysis.html#/) [Annotated Code](https://cbail.github.io/ids704/basic-text-analysis/rmarkdown/Basic_Text_Analysis_in_R.html)
 
 
 ### **Mid-Term Exam & Review**
@@ -255,7 +273,7 @@ Text pre-processing, n-grams
 
 
 ### **[Assignment: Lab 4](https://cbail.github.io/ids704/labs/lab4/lab4.html)**
-*- Due: February 27* 
+*- Due: February 28* 
 
 #### **February 20: Dictionary-Based Analysis**
 ***Materials:***  
@@ -266,29 +284,42 @@ Text pre-processing, n-grams
 
 
 ### **[Assignment: Lab 5](https://cbail.github.io/ids704/labs/lab5/lab5.html)**
-*- Due: March 3* 
+*- Due: March 6* 
 
-#### **February 25: Topic Modeling, Part 1**
+#### **February 25: Topic Modeling**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/Topic_Modeling.html)
 
 ***Required reading***:  
 - Blei, David M. 2012. Probabilistic Topic Models. Communications of the ACM (Note: this is a challenging article, so don’t worry if you are not able to understand every last part).
 
-#### **February 27: Topic Modeling, Part 2**
+#### **February 27: Structural Topic Models**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
+[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code, ](https://cbail.github.io/ids704/topic-modeling/Topic_Modeling.html) [Running R on AWS](https://cbail.github.io/Running_R_in_the%20Cloud.html#/)
 
-#### **March 3: Structural Topic Models**
-***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/topic-modeling/Rpres/Topic%20Modeling.html#/) [Annotated Code](https://cbail.github.io/ids704/topic-modeling/rmarkdown/Topic_Modeling.html)
-
-#### **March 5: Social Network Analysis**
+#### **March 3: Social Network Analysis, Part I**
 ***Topics:***  
 An Introduction to Social Network Analysis
 
 ***Materials:***  
-[Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit)
+[Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit) [Annotated Code ](https://cbail.github.io/ids704/social-networks/Intro_to_Network_Analysis_in_R.html)
+
+***Required reading***:  
+- Nicholas Cristakis & James Fowler. [Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives], Chapter One.
+
+***Additional reading***:  
+- Duncan Watts. 1999. [**Small Worlds**], Chapter 1. Princeton University Press: 3-8.  
+- Kieran Healy. (2013). [Using Metadata to Find Paul Revere](https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/), Blog post.  
+- David Austin. (2006). [How Google Finds Your Needle in the Web's Haystack](http://www.ams.org/publicoutreach/feature-column/fcarc-pagerank), 
+American Mathematical Society Feature Column.
+
+
+
+#### **March 5: Social Network Analysis, Part II**
+***Topics:***  
+
+***Materials:***  
+[Slides, ](https://docs.google.com/presentation/d/18Jjq70XnotcSqQwj8hfq12xfIPCSvO8BhVsh71ZvOno/edit), [Annotated Code ](https://cbail.github.io/ids704/social-networks/Intro_to_Network_Analysis_in_R.html)
 
 ***Required reading***:  
 - Nicholas Cristakis & James Fowler. [Connected: The Surprising Power of Our Social Networks and How they Shape Our Lives], Chapter One.

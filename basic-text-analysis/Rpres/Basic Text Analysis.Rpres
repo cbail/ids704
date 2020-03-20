@@ -20,6 +20,7 @@
 </style>
 
 
+
 Basic Text Analysis
 ========================================================
 author: Chris Bail 
@@ -139,8 +140,12 @@ What is a Corpus?
 Creating a Corpus
 ========================================================
 &nbsp;
-```{r}
+```{r, eval=FALSE}
 load(url("https://cbail.github.io/Trump_Tweets.Rdata"))
+head(trumptweets$text)
+```
+```{r, echo=FALSE}
+load("~/ids704/basic-text-analysis/Rpres/trumptweets.Rdata")
 head(trumptweets$text)
 ```
 
@@ -190,17 +195,6 @@ tidy_trump_tweets %>%
 
 Corpus vs. TidyText
 ========================================================
-
-
-========================================================
-
-# **Now YOU Try it!!!**
-
-1) Pick one of the text based datasets we worked with in the last class;
-
-2) Clean the text (remove any unwanted characters);  
-
-3) Create a corpus or Tidytext dataframe
 
 ========================================================
 
@@ -363,5 +357,4 @@ tidy_trump_DTM<-
 3) Count the top five words in the dataset after removing stop words;
 
 4) Create a Document-Term Matrix
-
 
