@@ -30,7 +30,7 @@ The worldwide spread of COVID-19 has impacted all of us. Many of us are dealing 
 
 ***Remote Learning***
 
-Thank you all for completing the anonymous survey I distributed about your current situation. This has been enormously helpful as I try to chart the best path forward for our class. Unfortunately, this survey revealed that some people in our class do not have regular access to high quality internet right now, which means at least some people will not be able to participate in classes in real time. To accommodate these people, I am going to teach using YouTube live, which not only streams live video content but also immediately archives live streams. A major downside of YouTube live is that it does not allow you to talk to me. To facilitate live interaction and to allow you to participate in the class, I have decided that the best option is for us to all log onto slack during the class. This way, you may ask me questions and interact with each other in our #general channel. We will hold class at our regularly scheduled times. For those of you who are not able to join live, I will be very happy to answer any questions you have by slack at a later point in time.  
+Thank you all for completing the anonymous survey I distributed about your current situation. This has been enormously helpful as I try to chart the best path forward for our class. Unfortunately, this survey revealed that some people in our class do not have regular access to high quality internet right now, which means at least some people will not be able to participate in classes in real time. To accommodate these people, I am going to distribute links to recordings of each Zoom session in our course's slack channel for the remainder of the session.  We will hold class at our regularly scheduled times. For those of you who are not able to join live, I will be very happy to answer any questions you have by slack at a later point in time.  
 
 ***Course Requirements***
 
@@ -333,16 +333,16 @@ American Mathematical Society Feature Column.
 ### **Spring Break**
 #### **March 10: No Class (Spring Break)**  
 #### **March 12: No Class (Spring Break)**
-
+#### **March 17: Extended Spring Break due to Coronavirus**
+#### **March 19: Extended Spring Break due to Coronavirus**
 
 ### **[Assignment: Lab 6](https://cbail.github.io/ids704/labs/lab6/lab6.html)**
-*- Due: March 24* 
 
-#### **March 17: Text Networks, Part 1**
+#### **March 24: Text Networks, Part 1**
 ***Materials:***  
 [Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://cbail.github.io/ids704/text-networks/rmarkdown/Text_Networks.html)
 
-#### **March 19: Text Networks, Part 2**
+#### **March 26: Text Networks, Part 2**
 ***Topics:***  
 Textnets
 
@@ -351,31 +351,30 @@ Textnets
 
 
 ### **[Assignment: Lab 7](https://cbail.github.io/ids704/labs/lab7/lab7.html)**
-*- Due: April 2* 
 
-#### **March 24: Word Embeddings, Part 1**
+#### **March 31: Word Embeddings, Part 1**
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/ids704/word2vec/rmarkdown/word2vec.html)
 
-#### **March 26: Word Embeddings Part 2**
+#### **April 2: Word Embeddings Part 2**
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/ids704/word2vec/rmarkdown/word2vec.html)
 
-#### **March 31: Sentence Parsers**
+#### **April 7: Sentence Parsers**
 ***Topics:***  
 Part-of-Speech Tagging, Sentence Parsing, and Named Entity Recognition
 
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/tagging-parsing-ner/Taggingparsing.html)
-
-#### **April 2: No Class**
-#### **April 7: Chat Bots**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
+[Slides on Chat Bots (Bonus material), ](https://cbail.github.io/ids704/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
 
-### **Final Project Presentations**
+
 #### **April 9: Final Project Presentations**
-*- Groups 1-3*
+*- Groups 1-3*  
 
 #### **April 14: Final Project Presentations**
 *- Groups 4-6*
+
+
+
