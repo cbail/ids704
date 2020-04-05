@@ -336,8 +336,6 @@ American Mathematical Society Feature Column.
 #### **March 17: Extended Spring Break due to Coronavirus**
 #### **March 19: Extended Spring Break due to Coronavirus**
 
-### **[Assignment: Lab 6](https://cbail.github.io/ids704/labs/lab6/lab6.html)**
-
 #### **March 24: Text Networks, Part 1**
 ***Materials:***  
 [Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://cbail.github.io/ids704/text-networks/rmarkdown/Text_Networks.html)
@@ -348,9 +346,6 @@ Textnets
 
 ***Materials:***  
 [Slides, ](https://compsocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/Rpres/SICSS_Text_Networks.html) [Annotated Code](https://compssocialscience.github.io/summer-institute/2018/materials/day3-text-analysis/text-networks/rmarkdown/SICSS_Text_Networks.html)
-
-
-### **[Assignment: Lab 7](https://cbail.github.io/ids704/labs/lab7/lab7.html)**
 
 #### **March 31: Word Embeddings, Part 1**
 ***Materials:***  
@@ -371,10 +366,10 @@ Part-of-Speech Tagging, Sentence Parsing, and Named Entity Recognition
 
 
 #### **April 9: Final Project Presentations**
-*- Groups 1-3*  
+*- Groups 1-5*  
 
 #### **April 14: Final Project Presentations**
-*- Groups 4-6*
+*- Groups 5-10*
 
 
 
