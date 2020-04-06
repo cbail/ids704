@@ -355,21 +355,16 @@ Textnets
 ***Materials:***  
 [Slides, ](https://cbail.github.io/ids704/word2vec/rpres/word2vec.html) [Annotated Code](https://cbail.github.io/ids704/word2vec/rmarkdown/word2vec.html)
 
-#### **April 7: Sentence Parsers**
-***Topics:***  
-Part-of-Speech Tagging, Sentence Parsing, and Named Entity Recognition
-
+#### **April 7: Chat Bots**
 ***Materials:***  
-[Slides, ](https://cbail.github.io/ids704/tagging-parsing-ner/Taggingparsing.html)
-***Materials:***  
-[Slides on Chat Bots (Bonus material), ](https://cbail.github.io/ids704/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
+[Slides on Chat Bots, ](https://cbail.github.io/ids704/chat-bots/Chat%20Bots%20and%20Language%20Generation.html#/)
 
 
 #### **April 9: Final Project Presentations**
-*- Groups 1-5*  
+*- Groups 1-5, all individual projects not listed below*  
 
 #### **April 14: Final Project Presentations**
-*- Groups 5-10*
+*- Groups 6-10, individual projects: Abdur, Amandeep*
 
 
 
